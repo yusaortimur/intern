@@ -2,35 +2,149 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook - Giriş Yap veya Kaydol</title>
-    <link rel="stylesheet" href="fb.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook - Giriş Yap veya Kaydol</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preload" href="SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 </head>
 
 <body>
-    <main class="main">
-        <article class="mainLeft">
-            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="titleLogo" class="titleLogo">
-            <p class="explanation">Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı
-                sağlar.</p>
-        </article>
-        <div class="mainRight">
-            <div class="signInUp">
-                <input class="email" type="email" placeholder="E-Posta veya Telefon Numarası">
-                <input class="password" type="password" placeholder="Şifre">
-                <button class="loginButton" type="submit" onclick="">Giriş Yap</button>
-                <a class="passwordReset" target="_self"
-                    href="https://tr-tr.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzI0NzcwOTgyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next">Şifreni
-                    mi Unuttun?
-                </a>
-                <br>
-                <button class="signInButton" type="submit" onclick=""></button>
-            </div>
-        </div>
-    </main>
 
+        <main class="totalMain">
+                <div class="main">
+                        <div class="titleLogoExplanation">
+                                <div class="titleLogoMain">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                                                alt="titleLogo" class="titleLogo">
+                                </div>
 
+                                <h2 class="explanation">Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup
+                                        bitenleri paylaşmanı sağlar.</h2>
+                        </div>
+                        <div class="signInUp">
+                                <input class="email" type="email" placeholder="E-Posta veya Telefon Numarası">
+                                <input class="password" type="password" placeholder="Şifre">
+                                <a href="login/login.html"><button class="loginButton" type="submit">Giriş
+                                                Yap</button></a>
+                                <a class="passwordReset" target="_self"
+                                        href="https://tr-tr.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzI0NzcwOTgyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next">Şifreni
+                                        mi Unuttun? </a>
+                                <button class="signInButton" type="submit">Yeni hesap oluştur</button>
+
+                                <p>Ünlü biri, marka veya işletme için <a class="pageCreate" target="_self"
+                                                href="https://tr-tr.facebook.com/pages/create/?ref_type=registration_form">Sayfa
+                                                oluştur</a>.</p>
+                        </div>
+                </div>
+        </main>
+
+        <footer class="footer">
+                <div class="footerList">
+                        <ul>
+                                <li><a class="lang" href="https://tr-tr.facebook.com/">Türkçe</a></li>
+                                <li><a class="lang" href="https://ku-tr.facebook.com/">Kurdî (Kurmancî)</a></li>
+                                <li><a class="lang" href="https://ar-ar.facebook.com/">العربية</a></li>
+                                <li><a class="lang" href="https://en-gb.facebook.com/">English (UK)</a></li>
+                                <li><a class="lang" href="https://zz-tr.facebook.com/">Zaza</a></li>
+                                <li><a class="lang" href="https://de-de.facebook.com/">Deutsch</a></li>
+                                <li><a class="lang" href="https://ru-ru.facebook.com/">Русский</a></li>
+                                <li><a class="lang" href="https://fr-fr.facebook.com/">Français (France)</a>
+                                </li>
+                                <li><a class="lang" href="https://fa-ir.facebook.com/">فارسی</a></li>
+                                <li><a class="lang" href="https://es-la.facebook.com/">Español</a></li>
+                                <li><a class="lang" href="https://pt-br.facebook.com/">Português (Brasil)</a>
+                                </li>
+                                <li><button> + </button></li>
+                        </ul>
+                        <br>
+                        <ul>
+                                <li><a href="https://tr-tr.facebook.com/reg/" title="Facebook'a Kaydol">Kaydol</a></li>
+                                <li><a href="https://tr-tr.facebook.com/login/" title="Facebook'a Giriş Yap">Giriş
+                                                Yap</a></li>
+                                <li><a href="https://messenger.com/" title="Messenger'a göz at.">Messenger</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/lite/"
+                                                title="Android için Facebook Lite.">Facebook
+                                                Lite</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/watch/" title="Video'da göz at">Video</a></li>
+                                <li><a href="https://tr-tr.facebook.com/places/"
+                                                title="Facebook'taki popüler yerlere göz at.">Yerler</a></li>
+                                <li><a href="https://tr-tr.facebook.com/games/"
+                                                title="Facebook oyunlarına göz at.">Oyunlar</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/marketplace/"
+                                                title="Facebook Marketplace'te alım satım yap.">Marketplace</a>
+                                </li>
+                                <li><a href="https://about.meta.com/technologies/meta-pay"
+                                                title="Meta Pay hakkında daha fazla bilgi al">Meta Pay</a></li>
+                                <li><a href="https://www.meta.com/" title="Meta'ya göz at">Meta Mağazası</a>
+                                </li>
+                                <li><a href="https://www.meta.com/quest/"
+                                                title="Meta Quest hakkında daha fazla bilgi al">Meta
+                                                Quest</a>
+                                </li>
+                                <li><a href="https://www.meta.com/smart-glasses/"
+                                                title="Learn more about Meta Ray-Ban">Meta
+                                                Ray-Ban</a>
+                                </li>
+                                <li><a href="https://www.meta.ai/" title="Meta AI">Meta AI</a></li>
+                                <li><a href="https://www.instagram.com/" title="Instagram'a göz at">Instagram</a></li>
+                                <li><a href="https://www.threads.net/" title="Threads'e göz at">Threads</a></li>
+                                <li><a href="https://tr-tr.facebook.com/fundraisers/"
+                                                title="Önemli ortak hedeflere bağışta bulun.">Bağış
+                                                Kampanyaları</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/biz/directory/"
+                                                title="Facebook Hizmetleri rehberimize göz at.">Hizmetler</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
+                                                title="Oy Kullanma Bilgi Merkezi'ni gör.">Oy Kullanma Bilgi
+                                                Merkezi</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/privacy/policy/?entry_point=facebook_page_footer"
+                                                title="Facebook'u desteklemek için bilgileri nasıl topladığımızı, kullandığımızı ve paylaştığımızı öğren.">Gizlilik
+                                                İlkesi</a></li>
+                                <li><a href="https://tr-tr.facebook.com/privacy/center/?entry_point=facebook_page_footer"
+                                                title="Facebook'ta gizliliğini nasıl yöneteceğini ve kontrol edeceğini öğren.">Gizlilik
+                                                Merkezi</a></li>
+                                <li><a href="https://tr-tr.facebook.com/groups/discover/"
+                                                title="Gruplarımızı keşfet.">Gruplar</a></li>
+                                <li><a href="https://about.meta.com/"
+                                                title="Blogumuzu oku, kaynak merkezini keşfet ve iş fırsatları bul.">Hakkımızda</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto"
+                                                title="Facebook'ta reklam ver.">Reklam Oluştur</a></li>
+                                <li><a href="https://tr-tr.facebook.com/pages/create/?ref_type=site_footer"
+                                                title="Bir Sayfa oluştur.">Sayfa Oluştur</a></li>
+                                <li><a href="https://developers.facebook.com/?ref=pf"
+                                                title="Platformumuzda uygulamalar geliştir.">Geliştiriciler</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/careers/?ref=pf"
+                                                title="Kariyerine müthiş şirketimizde devam et.">Kariyer
+                                                Olanakları</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/policies/cookies/"
+                                                title="Çerezler ve Facebook hakkında daha fazla bilgi al.">Çerezler</a>
+                                </li>
+                                <li><a href="https://www.facebook.com/help/568137493302217"
+                                                title="Ad Choices hakkında bilgi alın.">Ad
+                                                Choices</a></li>
+                                <li><a href="https://tr-tr.facebook.com/policies?ref=pf"
+                                                title="Koşul ve ilkelerimizi gözden geçir.">Koşullar</a></li>
+                                <li><a href="https://tr-tr.facebook.com/help/?ref=pf"
+                                                title="Yardım Merkezimizi ziyaret et.">Yardım</a>
+                                </li>
+                                <li><a href="https://tr-tr.facebook.com/help/637205020878504"
+                                                title="Kişi Yükleme ve Hesabı Olmayanlarla İlgili Bildirimimizi ziyaret et.">Kişi
+                                                Yükleme ve
+                                                Hesabı Olmayan Kişiler</a></li>
+                        </ul>
+                </div>
+
+        </footer>
 </body>
 
 </html>
