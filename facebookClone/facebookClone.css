@@ -3,7 +3,7 @@ a:link {
 }
 
 body {
-    font-family: 'SF Pro Display',sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: normal;
     font-style: normal;
     display: flex;
@@ -210,6 +210,11 @@ body {
 
 .pageCreate {
     font-weight: bold;
+    color: black;
+}
+
+.pageCreate:hover {
+    text-decoration: underline;
 }
 
 .footer {
