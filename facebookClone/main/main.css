@@ -1,7 +1,16 @@
+a:link {
+    text-decoration: none;
+}
+
 body {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SF Pro Display';
     font-weight: normal;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 244, 247);
 }
 
 .totalMain {
@@ -14,11 +23,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 496px;
-    width: 980px;
+    width: auto;
+    height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 461.5px;
+    margin-left: 440px;
     margin-right: 461.5px;
     margin-top: 72px;
     margin-bottom: 112px;
@@ -27,13 +36,13 @@ body {
 .titleLogoExplanation {
     width: 548px;
     height: 298px;
-    padding-right: 32px;
+    padding-right: 40px;
 }
 
 .titleLogoMain {
     width: 548px;
     height: 54px;
-    padding-top: 112px;
+    padding-top: 90px;
     padding-bottom: 16px;
 }
 
@@ -46,6 +55,7 @@ body {
 .explanation {
     width: 500px;
     height: 96px;
+    margin-top: 10px;
     padding: 20px;
     font-size: 28px;
     line-height: 32px;
@@ -56,17 +66,190 @@ body {
     height: 496px;
 }
 
+.signTop {
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    width: 396px;
+    height: 365px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+}
+
+.totalInput {
+    display: flex;
+    width: 396px;
+    height: 132px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainDataInput {
+    width: 364px;
+    height: 52px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 17px;
+    display: inline-block;
+    color: #1d2129;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.dataInput {
+    width: 330px;
+    height: 22px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    color: #dddfe2;
+}
+.dataInput::placeholder{
+    font-size: 17px;
+}
+
+.submitButton {
+    width: 396px;
+    height: 48px;
+    padding-top: 6px;
+    font-family: inherit;
+    display: block;
+    text-align: center;
+}
+
+.loginButton {
+    border: none;
+    width: 332px;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #0866ff;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    color: #fff;
+    box-sizing: content-box;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    letter-spacing: normal;
+    word-spacing: normal;
+    padding-block: 1px;
+    padding-inline: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.loginButton:hover {
+    background-color: #2a7bfd;
+}
+
+.passwordReset {
+    font-size: 14px;
+    color: #0866ff;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passwordReset:hover {
+    text-decoration: underline;
+}
+
+.passwordReset:visited {
+    color: #0866ff;
+}
+
+.signHr {
+    width: 360px;
+    border-color: white;
+}
+
+.signInButton {
+    cursor: pointer;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 48px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+.signInButton:hover {
+    background-color: #37a022;
+}
+
+.signBottom {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 48px;
+}
+
+.pageCreate {
+    font-weight: bold;
+}
 
 .footer {
-    background-color: antiquewhite;
-    width: 1903px;
-    height: 157px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerList {
+    color: #737373;
+    list-style-type: none;
+    text-decoration: none;
     padding-top: 20px;
     margin-left: 461.5px;
     margin-right: 461.5px;
     width: 980px;
     height: 137px;
+}
+
+.footerListUp {
+    padding-top: 8px;
+    text-decoration: none;
+}
+.link{
+    padding-left: 10px;
+}
+
+.link:link {
+    text-decoration: none;
+    color: gray;
+}
+
+.link:hover {
+    text-decoration:underline;
+}
+
+.link:visited {
+    color: gray;
 }
