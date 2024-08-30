@@ -28,7 +28,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 440px;
-    margin-right: 461.5px;
+    margin-right: 465.5px;
     margin-top: 72px;
     margin-bottom: 112px;
 }
@@ -58,7 +58,8 @@ body {
     margin-top: 10px;
     padding: 20px;
     font-size: 28px;
-    line-height: 32px;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 .signInUp {
@@ -114,7 +115,8 @@ body {
     border-radius: 6px;
     color: #dddfe2;
 }
-.dataInput::placeholder{
+
+.dataInput::placeholder {
     font-size: 17px;
 }
 
@@ -214,8 +216,9 @@ body {
     background-color: #fff;
     width: 100%;
     height: 100%;
-    padding: 0 40px;
-    font-size: 12px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,9 +239,21 @@ body {
 .footerListUp {
     padding-top: 8px;
     text-decoration: none;
+    font-size: 11px;
 }
-.link{
-    padding-left: 10px;
+
+.footerHr {
+    width: 98%;
+}
+
+.footerListDown {
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link {
+    padding-left: 11px;
 }
 
 .link:link {
@@ -247,9 +262,14 @@ body {
 }
 
 .link:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .link:visited {
     color: gray;
+}
+
+.copyright {
+    padding-left: 10px;
+    padding-top: 10;
 }
