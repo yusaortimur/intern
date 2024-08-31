@@ -71,6 +71,7 @@ body {
     border-radius: 30px;
     margin-bottom: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .appleLogo {
@@ -88,6 +89,7 @@ body {
     text-align: center;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 .hrDiv {
@@ -119,6 +121,7 @@ body {
     margin-bottom: 10px;
     border: none;
     margin-top: -5px;
+    cursor: pointer;
 }
 
 .signUp:hover {
@@ -164,6 +167,7 @@ body {
     border-width: 1px;
     border-color: gray;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .signIn:active {
@@ -189,4 +193,7 @@ body {
     font-size: 13px;
     margin: 4px 0px 4px 0px;
     padding-right: 16px;
+}
+.link:hover{
+    text-decoration: underline;
 }
