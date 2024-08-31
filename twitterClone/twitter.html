@@ -16,26 +16,78 @@
     <main>
         <div class="mainLR">
             <div class="mainLeft">
-                <img src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png" alt="mainLeftLogo">
+                <div class="mainLeftLogo">
+                    <img class="mainLogo" src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
+                        alt="mainLeftLogo">
+                </div>
             </div>
             <div class="mainRight">
-                <p class="mainTitle">Şu anda olup bitenler</p>
+                <div class="mainTitleDiv">
+                    <p class="mainTitle">Şu anda olup bitenler</p>
+                </div>
                 <p class="title">Hemen katıl.</p>
-                <button class="linkButton">Google ile kaydolun</button>
-                <button class="linkButton">Apple ile kaydol</button>
-                <hr>
-                <p class="pOr">veya</p>
-                <hr>
-                <button id="singUp" class="signInUp">Hesap oluştur</button>
-                <p>By signing up, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>,
-                    including <a href="">Cookie Use.</a></p>
-                <p>Zaten bir hesabın var mı?</p>
-                <button id="singIn" class="signInUp">Giriş yap</button>
+                <div class="linkButtonDiv">
+                    <a
+                        href="https://accounts.google.com/gsi/select?client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&ux_mode=popup&ui_mode=card&as=IC0KklB8%2B31zvsONjD2amw&channel_id=09825063a39bc333b23e3818fde07f1581cfec002bb3b47b7a14ded4314137b9&origin=https%3A%2F%2Fx.com"><button
+                            class="linkButtonGoogle" type="submit"><img class="googleLogo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                                alt="googleLogo"> Google ile kaydolun</button></a>
+
+                    <a
+                        href="https://appleid.apple.com/auth/authorize?client_id=com.twitter.twitter.siwa&redirect_uri=https%3A%2F%2Fx.com&response_type=code%20id_token&state=We7yD0jNoEOB_mgMfMJaqMpD83wrt6QhTUjtwboDhIp&scope=name%20email&response_mode=web_message&frame_id=00776c20-4122-47dd-90c8-b04f53322dcf&m=11&v=1.5.5"><button
+                            class="linkButtonApple" type="submit"><img class="appleLogo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png"
+                                alt="appleLogo"> Apple ile kaydol</button></a>
+
+                </div>
+                <div class="hrDiv">
+                    <div class="hr"></div>
+                    <p class="pOr">- veya -</p>
+                    <div class="hr"></div>
+                </div>
+                <a href="https://x.com/i/flow/signup"><button class="signUp">Hesap oluştur</button></a>
+                <div class="explanationDiv">
+                    <p class="explanation">By signing up, you agree to the <a class="exp"
+                            href="https://x.com/en/tos">Terms
+                            of
+                            Service</a> and <a class="exp" href="https://x.com/en/privacy">Privacy Policy</a>,
+                        including <a class="exp" href="https://help.x.com/tr/rules-and-policies/x-cookies">Cookie
+                            Use.</a>
+                    </p>
+                </div>
+                <p class="comment">Zaten bir hesabın var mı?</p>
+                <a href="https://x.com/i/flow/login"><button class="signIn">Giriş yap</button></a>
             </div>
         </div>
 
 
-        <div class="footer"></div>
+        <footer class="footer">
+            <nav class="footerNav">
+                <a class="link" href="https://about.x.com/tr">Hakkında</a>
+                <a class="link" href="https://help.x.com/en/using-x/download-the-x-app">X uygulamasını indir</a>
+                <a class="link" href="https://help.x.com/tr">Yardım Merkezi</a>
+                <a class="link" href="https://x.com/en/tos">Hizmet Şartları</a>
+                <a class="link" href="https://x.com/en/privacy">Gizlilik Politikası</a>
+                <a class="link" href="https://support.x.com/articles/20170514">Çerez Politikası</a>
+                <a class="link" href="https://legal.x.com/tr/imprint">Imprint</a>
+                <a class="link" href="https://help.x.com/tr/resources/accessibility">Erişilebilirlik</a>
+                <a class="link" href="https://business.x.com/en/help/troubleshooting/how-x-ads-work.html">Reklam
+                    Bilgisi</a>
+                <a class="link" href="https://blog.x.com/">Blog</a>
+                <a class="link" href="https://careers.x.com/en">Kariyer</a>
+                <a class="link" href="https://about.x.com/tr/company/brand-resources">Marka Kaynakları</a>
+                <a class="link" href="https://ads.x.com/?ref=gl-tw-tw-twitter-advertise">Reklam</a>
+                <a class="link" href="https://business.x.com/">Pazarlama</a>
+                <a class="link"
+                    href="https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">İşletmeler
+                    için X</a>
+                <a class="link" href="https://developer.x.com/en">Geliştiriciler</a>
+                <a class="link" href="https://x.com/i/directory/profiles">Dizin</a>
+                <a class="link" href="https://x.com/settings/account/personalization">Ayarlar</a>
+                <p class="link" class="copyright">© 2024 X Corp.</p>
+            </nav>
+
+        </footer>
     </main>
 </body>
 

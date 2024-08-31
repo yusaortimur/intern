@@ -1,8 +1,192 @@
 body {
     font-family: 'Font', sans-serif;
+    background-color: black;
 }
 
-main {
-    /*background-color: black;*/
+.mainLR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.mainLeftLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    height: 905px;
+    padding: 0px 32px 0px 0px;
+    margin-left: -270px;
+}
+
+.mainLogo {
+    object-fit: contain;
+    width: 57%;
+    padding-top: 10px;
+    padding-right: 135px;
+    padding-bottom: 25px;
+}
+
+.mainRight{
+    margin-left: -36px;
+}
+.mainTitleDiv {
+    width: 460px;
+    height: 168px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.mainTitle {
+    font-size: 64px;
+    color: rgb(231, 233, 234);
+    line-height: 80px;
+}
+
+.title {
+    font-size: 31px;
+    margin-bottom: 30px;
+    color: rgb(231, 233, 234);
+}
+
+.linkButtonDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.googleLogo {
+    object-fit: contain;
+    width: 7%;
+
+}
+
+.linkButtonGoogle {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.appleLogo {
+    object-fit: contain;
+    width: 5%;
+}
+
+.linkButtonApple {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+
+.hrDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: -6px;
+}
+
+.hr {
+    margin-top: 26px;
+    width: 123px;
+    height: 1px;
+    background-color: gray;
+}
+
+.pOr {
+    font-family: sans-serif;
+    color: gray;
+}
+
+.signUp {
+    background-color: rgb(29, 155, 240);
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: none;
+    margin-top: -5px;
+}
+
+.signUp:hover {
+    background-color: rgb(28, 140, 214);
+}
+
+.explanationDiv {
+    width: 300px;
+    margin-top: -15px;
+}
+
+.explanation {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 11px;
+    color: gray;
+}
+
+.exp {
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+
+.exp:hover {
+    text-decoration: underline;
+}
+
+.comment {
+    margin-top: 65px;
+    font-weight: bold;
+    font-size: 17px;
+    border-color: rgb(231, 233, 2);
+}
+
+.signIn {
+    background-color: black;
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(29, 155, 240);
+    font-weight: bold;
+    margin-top: 5px;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 30px;
+}
+
+.signIn:active {
+    border-style: outset;
+}
+
+.signIn:hover {
+    background-color: rgba(32, 150, 228, 0.095);
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1887px;
+}
+
+.link {
+    color: rgb(92, 92, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 4px 0px 4px 0px;
+    padding-right: 16px;
+}
