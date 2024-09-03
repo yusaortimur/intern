@@ -8,6 +8,15 @@
     src: url('https://statics.memondo.com/g/fonts/twitter/Chirp-Light.7a5673aa.woff');
 }
 
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
 p {
     margin: 0;
 }
@@ -41,6 +50,7 @@ body {
     padding-top: 10px;
     padding-right: 135px;
     padding-bottom: 25px;
+    pointer-events: none;
 }
 
 .mainRight {
@@ -85,6 +95,11 @@ body {
     border: none;
     cursor: pointer;
     letter-spacing: 0.25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .linkButtonGoogle:hover,
@@ -109,7 +124,7 @@ body {
 
 .googleLogo {
     width: 7%;
-    margin-right:7px;
+    margin-right: 7px;
 }
 
 
@@ -194,7 +209,7 @@ body {
 }
 
 .signIn:active {
-    border-style: outset;
+    border: 0.5px solid gray;
 }
 
 .signIn:hover {

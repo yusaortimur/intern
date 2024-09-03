@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="tr" style="color-scheme: dark; overflow-y:scroll ;">
 
+<script language="javascript">
+    document.onmousedown = disableclick;
+    function disableclick(event) {
+        if (event.button == 2) {
+            return false;
+        }
+    }
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +23,7 @@
     </style>
 </head>
 
-<body>
+<body oncontextmenu="return false" class="unselectable">
     <main>
         <div class="mainLR">
             <div class="mainLeft">
