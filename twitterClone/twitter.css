@@ -1,5 +1,20 @@
+@font-face {
+    font-family: "Extended";
+    src: url('https://statics.memondo.com/g/fonts/twitter/chirp-extended-heavy-web.woff');
+}
+
+@font-face {
+    font-family: "Light";
+    src: url('https://statics.memondo.com/g/fonts/twitter/Chirp-Light.7a5673aa.woff');
+}
+
+p {
+    margin: 0;
+}
+
 body {
-    font-family: 'Font', sans-serif;
+    font-family: 'Extended', sans-serif;
+    font-weight: bold;
     background-color: black;
 }
 
@@ -28,20 +43,21 @@ body {
     padding-bottom: 25px;
 }
 
-.mainRight{
+.mainRight {
     margin-left: -36px;
+    margin-bottom: -25px;
 }
+
 .mainTitleDiv {
     width: 460px;
     height: 168px;
-    margin-top: -40px;
-    margin-bottom: 15px;
+    margin: 0 0 40px 0;
 }
 
 .mainTitle {
-    font-size: 64px;
+    font-size: 62px;
     color: rgb(231, 233, 234);
-    line-height: 80px;
+    line-height: 82px;
 }
 
 .title {
@@ -56,13 +72,8 @@ body {
     align-items: start;
 }
 
-.googleLogo {
-    object-fit: contain;
-    width: 7%;
-
-}
-
-.linkButtonGoogle {
+.linkButtonGoogle,
+.linkButtonApple {
     width: 300px;
     height: 40px;
     font-size: 15px;
@@ -74,40 +85,51 @@ body {
     cursor: pointer;
 }
 
+.linkButtonGoogle:hover,
+.linkButtonApple:hover {
+    background-color: rgba(255, 255, 255, 0.952);
+}
+
+.linkButtonApple {
+    text-align: center;
+    font-weight: bold;
+}
+
+.linkButtonGoogle {
+    font-family: 'Product Sans Light';
+    padding-left: 2px;
+}
+
 .appleLogo {
     object-fit: contain;
     width: 5%;
 }
 
-.linkButtonApple {
-    width: 300px;
-    height: 40px;
-    font-size: 15px;
-    color: black;
-    background-color: white;
-    border-radius: 30px;
-    text-align: center;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+.googleLogo {
+    object-fit: contain;
+    width: 7%;
+    margin: 0px;
 }
+
 
 .hrDiv {
     display: flex;
-    flex-direction: row;
-    margin-top: -6px;
+    margin: 0px 0 10px 0;
 }
 
 .hr {
-    margin-top: 26px;
+    margin-top: 9px;
     width: 123px;
     height: 1px;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.473);
 }
 
 .pOr {
     font-family: sans-serif;
-    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 10px;
+    color: white;
 }
 
 .signUp {
@@ -120,7 +142,6 @@ body {
     border-radius: 30px;
     margin-bottom: 10px;
     border: none;
-    margin-top: -5px;
     cursor: pointer;
 }
 
@@ -130,11 +151,11 @@ body {
 
 .explanationDiv {
     width: 300px;
-    margin-top: -15px;
 }
 
 .explanation {
-    font-family: sans-serif;
+    font-family: 'Light', sans-serif;
+    font-weight: lighter;
     text-decoration: none;
     font-size: 11px;
     color: gray;
@@ -150,10 +171,10 @@ body {
 }
 
 .comment {
-    margin-top: 65px;
+    font-family: 'Light', sans-serif;
     font-weight: bold;
+    margin-top: 60px;
     font-size: 17px;
-    border-color: rgb(231, 233, 2);
 }
 
 .signIn {
@@ -163,10 +184,11 @@ body {
     font-size: 15px;
     color: rgb(29, 155, 240);
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 20px;
     border-width: 1px;
     border-color: gray;
     border-radius: 30px;
+    border: 0.5px solid gray;
     cursor: pointer;
 }
 
@@ -186,14 +208,17 @@ body {
     width: 1887px;
 }
 
-.link {
-    color: rgb(92, 92, 92);
-    font-family: Arial, Helvetica, sans-serif;
+.link,
+.copyright {
+    color: rgb(113, 118, 123);
+    font-family: 'Light', Arial, Helvetica, sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 13px;
-    margin: 4px 0px 4px 0px;
-    padding-right: 16px;
+    padding-right: 17px;
+    margin-bottom: -30px;
 }
-.link:hover{
+
+.link:hover {
     text-decoration: underline;
 }

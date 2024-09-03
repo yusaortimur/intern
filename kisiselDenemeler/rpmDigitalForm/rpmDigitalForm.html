@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rpm Digital</title>
+    <link rel="stylesheet" href="rpmDigitalForm.css">
+</head>
+
+<body>
+    <h1 id="title">Rpm Digital Stajyer Başvuru Formu</h1>
+    <p id="description">Lütfen sizden istenen bilgileri eksiksiz ve doğru şekilde doldurunuz.</p>
+    <form id="rpm-form">
+        <label id="name-label">İsim ve Soyisim:
+            <input id="name" required placeholder="İsim ve Soyisim giriniz" />
+        </label>
+        <label id="email-label">E-Mail adresi:
+            <input id="email" type="email" required placeholder="E-Mail adresi giriniz" />
+        </label>
+        <label id="number-label">Yaş:
+            <input id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
+        </label>
+        <label id="durum-label">Durum:
+            <select id="dropdown" required>
+                <option value="1">
+                    seçim yapınız
+                </option>
+                <option value="2">
+                    Öğrenci
+                </option>
+                <option value="3">
+                    Yarı Zamanlı Çalışan
+                </option>
+                <option value="4">
+                    Tam Zamanlı Çalışan
+                </option>
+            </select>
+        </label>
+        <label id="cinsiyet-label">Cinsiyet:
+            <label id="erkek-label">
+                Erkek:<input type="radio" value="erkek" name="cinsiyet" />
+            </label>
+            <label id="kadin-label">
+                Kadın:<input type="radio" value="kadin" name="cinsiyet" />
+            </label>
+        </label>
+        <label id="dil-label">Dil bilgisi:
+            <label>Türkçe:<input type="checkbox" value="turkce" />
+            </label>
+            <label>İngilizce:<input type="checkbox" value="ingilizce" />
+            </label>
+        </label>
+        <label id="detay-label">Son çalıştığınız firma bilgileri (Firma ismi, Telefon numarası): <textarea id="detay"
+                name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
+        </label>
+        <button id="submit-button" type="submit">Gönder</button>
+
+    </form>
+</body>
+
+</html>
