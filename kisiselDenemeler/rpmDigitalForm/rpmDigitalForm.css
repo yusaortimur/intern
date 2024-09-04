@@ -15,19 +15,22 @@ body {
     user-select: none;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 h1,
 p {
     margin: 1rem auto;
     text-align: center;
 }
 
-h1:hover,
+/*h1:hover,
 p:hover,
 label:hover,
 button:hover {
-    color: rgba(255, 255, 255, 0.5);
-    /*-webkit-text-stroke: 0.01px white;*/
-}
+    -webkit-text-stroke: 0.01px white;
+}*/
 
 input[type="text"]:hover::placeholder,
 input[type="email"]:hover::placeholder,
@@ -56,7 +59,16 @@ textarea:focus,
 button:hover,
 h1:hover {
     font-size: 45px;
-    transition: all 1000ms;
+    transition: all 1000ms linear;
+}
+
+label:not(:active),
+input:not(:focus),
+select:not(:focus),
+textarea:not(:focus),
+button:not(:hover),
+h1:not(:hover) {
+    transition: all 1000ms linear;
 }
 
 textarea::placeholder,
