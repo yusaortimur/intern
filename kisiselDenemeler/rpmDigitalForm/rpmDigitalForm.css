@@ -2,7 +2,7 @@ body {
     font-family: "SUSE", Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     height: 100vh;
-    margin: auto;
+    margin: 0px;
     background: url(https://cdn.mos.cms.futurecdn.net/xaycNDmeyxpHDrPqU6LmaD.jpg);
     background-position: center;
     background-size: cover;
@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
     user-select: none;
 }
 
@@ -20,15 +19,23 @@ h1,
 p {
     margin: 1rem auto;
     text-align: center;
-    font-weight: 100;
 }
 
 h1:hover,
 p:hover,
-label:hover {
-    color: rgb(115, 121, 126);
+label:hover,
+button:hover {
+    color: rgba(255, 255, 255, 0.5);
     /*-webkit-text-stroke: 0.01px white;*/
 }
+
+input[type="text"]:hover::placeholder,
+input[type="email"]:hover::placeholder,
+input[type="number"]:hover::placeholder,
+textarea:hover::placeholder {
+    color: white;
+}
+
 
 label,
 input,
@@ -37,30 +44,58 @@ textarea,
 button {
     font-size: 20px;
     font-family: "SUSE", Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
     background-color: transparent;
     outline: none;
     border: none;
 }
+
 label:active,
-input::after,
-select::after,
-textarea::after,
-button::after {
-    font-size: 20px;
-    font-family: "SUSE", Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-    background-color: transparent;
-    outline: none;
-    border: none;
+input:focus,
+select:focus,
+textarea:focus,
+button:hover,
+h1:hover {
+    font-size: 45px;
+    transition: all 1000ms;
+}
+
+textarea::placeholder,
+input::placeholder,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
 select,
+textarea {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+select,
 button {
-    width: 100%;
+    color: white;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.option {
+    background-color: transparent;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    min-width: 1rem;
+    min-height: 1rem;
 }
 
 textarea {
@@ -92,6 +127,7 @@ textarea {
     margin: 20px auto;
     border-radius: 20px;
     background-color: rgba(180, 180, 180, 0.171);
+    color: rgb(255, 255, 255);
 }
 
 .mainDiv {
@@ -107,10 +143,6 @@ textarea {
 #dil-label,
 #detay-label {
     padding-bottom: 0.5%;
-}
-
-#submit-button{
-    
 }
 
 .nameDiv,

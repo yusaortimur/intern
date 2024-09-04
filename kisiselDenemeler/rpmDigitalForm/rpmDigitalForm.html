@@ -30,24 +30,19 @@
         <div class="mainDiv">
             <div class="numberDiv">
                 <label id="number-label">Yaş:</label>
-                <input autocomplete="off" id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
+                <input autocomplete="off" id="number" type="number" required min="15" max="90"
+                    placeholder="Yaşınızı giriniz" />
             </div>
         </div>
         <div class="mainDiv">
             <div class="durumDiv">
-                <label id="durum-label">Durum:</label>
-                <select id="dropdown" required>
-                    <option value="1">
-                        seçim yapınız
+                <label id="durum-label">Staj Türü:</label>
+                <select class="dropdown" id="dropdown" required>
+                    <option class="option"  value="1">
+                        Zorunlu Staj
                     </option>
-                    <option value="2">
-                        Öğrenci
-                    </option>
-                    <option value="3">
-                        Yarı Zamanlı Çalışan
-                    </option>
-                    <option value="4">
-                        Tam Zamanlı Çalışan
+                    <option class="option"  value="2">
+                        Gönüllü Staj
                     </option>
                 </select>
             </div>
@@ -77,10 +72,11 @@
         <div class="mainDiv">
             <div class="detayDiv">
                 <label id="detay-label">Son çalıştığınız firma bilgileri (Firma ismi, Telefon numarası):</label>
-                <textarea spellcheck="false" id="detay" name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
+                <textarea spellcheck="false" id="detay" name="detay" rows="3" cols="20"
+                    placeholder="Lütfen doldurunuz"></textarea>
             </div>
         </div>
-        <button id="submit-button" type="submit">Gönder</button>
+        <button class="submit-button" id="submit-button" type="submit">Gönder</button>
     </form>
 </body>
 
