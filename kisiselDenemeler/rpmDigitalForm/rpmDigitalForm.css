@@ -14,11 +14,15 @@ body {
     background-size: cover;
     backdrop-filter: blur(10px) brightness(100%);
     -webkit-backdrop-filter: blur(10px) brightness(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
 p {
-    margin: 1em auto;
+    margin: 1rem auto;
     text-align: center;
 }
 
@@ -35,21 +39,62 @@ label:hover {
     /*-webkit-text-stroke: 0.01px white;*/
 }
 
+label,
+input,
+select,
+textarea,
+button {
+    font-size: 20px;
+}
+
+input[type="text"],input[type="email"],input[type="number"],input[type=""]
+select,
+button {width: 100%;}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 155px;
+    min-height: 125px;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#durum-label,
+#cinsiyet-label,
+#dil-label,
+#detay-label {
+    padding-bottom: 0.5%;
+}
+
+
 .mainForm {
     display: flex;
     flex-direction: column;
     text-align: start;
     padding: 20px;
-    width: 100vw;
-    max-width: 450px;
+    width: 100%;
+    max-width: 700px;
     min-width: 250px;
-    margin: 0 auto;
-    border-radius: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: rgba(180, 180, 180, 0.171);
 }
 
 .mainDiv {
     display: flex;
     flex-direction: column;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#durum-label,
+#cinsiyet-label,
+#dil-label,
+#detay-label {
+    padding-bottom: 0.5%;
 }
 
 .nameDiv,
@@ -64,14 +109,4 @@ label:hover {
     align-items: start;
     justify-content: start;
     margin-bottom: 2%;
-}
-
-#name-label,
-#email-label,
-#number-label,
-#durum-label,
-#cinsiyet-label,
-#dil-label,
-#detay-label {
-    padding-bottom: 0.5%;
 }

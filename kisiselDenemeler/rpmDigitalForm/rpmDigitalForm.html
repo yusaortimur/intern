@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="utf-8">
     <title>Rpm Digital</title>
     <link rel="stylesheet" href="rpmDigitalForm.css">
 </head>
+
 <body>
-    <div class="backImage">
+    <form class="mainForm" id="rpm-form">
         <h1 id="title">Rpm Digital Stajyer Başvuru Formu</h1>
         <p id="description">Lütfen sizden istenen bilgileri eksiksiz ve doğru şekilde doldurunuz.</p>
-        <form class="mainForm" id="rpm-form">
-            <div class="mainDiv">
-                <div class="nameDiv">
-                    <label id="name-label">İsim ve Soyisim:</label>
-                    <input id="name" required placeholder="İsim ve Soyisim giriniz" />
-                </div>
+        <div class="mainDiv">
+            <div class="nameDiv">
+                <label id="name-label">İsim ve Soyisim:</label>
+                <input type="text" id="name" required placeholder="İsim ve Soyisim giriniz" />
             </div>
-            <div class="mainDiv">
-                <div class="emailDiv">
-                    <label id="email-label">E-Mail adresi:</label>
-                    <input id="email" type="email" required placeholder="E-Mail adresi giriniz" />
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="emailDiv">
+                <label id="email-label">E-Mail adresi:</label>
+                <input id="email" type="email" required placeholder="E-Mail adresi giriniz" />
             </div>
-            <div class="mainDiv">
-                <div class="numberDiv">
-                    <label id="number-label">Yaş:</label>
-                    <input id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="numberDiv">
+                <label id="number-label">Yaş:</label>
+                <input id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
             </div>
-            <div class="mainDiv">
-                <div class="durumDiv">
-                    <label id="durum-label">Durum:</label>
-                    <select id="dropdown" required>
-                        <option value="1">
-                            seçim yapınız
-                        </option>
-                        <option value="2">
-                            Öğrenci
-                        </option>
-                        <option value="3">
-                            Yarı Zamanlı Çalışan
-                        </option>
-                        <option value="4">
-                            Tam Zamanlı Çalışan
-                        </option>
-                    </select>
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="durumDiv">
+                <label id="durum-label">Durum:</label>
+                <select id="dropdown" required>
+                    <option value="1">
+                        seçim yapınız
+                    </option>
+                    <option value="2">
+                        Öğrenci
+                    </option>
+                    <option value="3">
+                        Yarı Zamanlı Çalışan
+                    </option>
+                    <option value="4">
+                        Tam Zamanlı Çalışan
+                    </option>
+                </select>
             </div>
-            <div class="mainDiv">
-                <div class="cinsiyetDiv">
-                    <label id="cinsiyet-label">Cinsiyet:</label>
-                    <label>
-                        Erkek:<input type="radio" value="erkek" name="cinsiyet" />
-                    </label>
-                    <label>
-                        Kadın:<input type="radio" value="kadin" name="cinsiyet" />
-                    </label>
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="cinsiyetDiv">
+                <label id="cinsiyet-label">Cinsiyet:</label>
+                <label>
+                    <input type="radio" value="erkek" name="cinsiyet" /> Erkek
+                </label>
+                <label>
+                    <input type="radio" value="kadin" name="cinsiyet" /> Kadın
+                </label>
             </div>
-            <div class="mainDiv">
-                <div class="dilDiv">
-                    <label id="dil-label">Dil bilgisi:</label>
-                    <label>
-                        Türkçe:<input type="checkbox" value="turkce" />
-                    </label>
-                    <label>
-                        İngilizce:<input type="checkbox" value="ingilizce" />
-                    </label>
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="dilDiv">
+                <label id="dil-label">Dil bilgisi:</label>
+                <label>
+                    <input type="checkbox" value="turkce" /> Türkçe
+                </label>
+                <label>
+                    <input type="checkbox" value="ingilizce" /> İngilizce
+                </label>
             </div>
-            <div class="mainDiv">
-                <div class="detayDiv">
-                    <label id="detay-label">Son çalıştığınız firma bilgileri (Firma ismi, Telefon numarası):</label>
-                    <textarea id="detay" name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
-                </div>
+        </div>
+        <div class="mainDiv">
+            <div class="detayDiv">
+                <label id="detay-label">Son çalıştığınız firma bilgileri (Firma ismi, Telefon numarası):</label>
+                <textarea id="detay" name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
             </div>
-            <button id="submit-button" type="submit">Gönder</button>
-        </form>
-    </div>
+        </div>
+        <button id="submit-button" type="submit">Gönder</button>
+    </form>
 </body>
+
 </html>
