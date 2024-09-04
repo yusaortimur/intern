@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="tr">
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100&display=swap');
+</style>
+
 <head>
     <meta charset="utf-8">
     <title>Rpm Digital</title>
     <link rel="stylesheet" href="rpmDigitalForm.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <form class="mainForm" id="rpm-form">
         <h1 id="title">Rpm Digital Stajyer Başvuru Formu</h1>
         <p id="description">Lütfen sizden istenen bilgileri eksiksiz ve doğru şekilde doldurunuz.</p>
         <div class="mainDiv">
             <div class="nameDiv">
                 <label id="name-label">İsim ve Soyisim:</label>
-                <input type="text" id="name" required placeholder="İsim ve Soyisim giriniz" />
+                <input autocomplete="off" type="text" id="name" required placeholder="İsim ve Soyisim giriniz" />
             </div>
         </div>
         <div class="mainDiv">
             <div class="emailDiv">
                 <label id="email-label">E-Mail adresi:</label>
-                <input id="email" type="email" required placeholder="E-Mail adresi giriniz" />
+                <input autocomplete="off" id="email" type="email" required placeholder="E-Mail adresi giriniz" />
             </div>
         </div>
         <div class="mainDiv">
             <div class="numberDiv">
                 <label id="number-label">Yaş:</label>
-                <input id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
+                <input autocomplete="off" id="number" type="number" required min="15" max="90" placeholder="Yaşınızı giriniz" />
             </div>
         </div>
         <div class="mainDiv">
@@ -52,10 +56,10 @@
             <div class="cinsiyetDiv">
                 <label id="cinsiyet-label">Cinsiyet:</label>
                 <label>
-                    <input type="radio" value="erkek" name="cinsiyet" /> Erkek
+                    <input autocomplete="off" type="radio" value="erkek" name="cinsiyet" /> Erkek
                 </label>
                 <label>
-                    <input type="radio" value="kadin" name="cinsiyet" /> Kadın
+                    <input autocomplete="off" type="radio" value="kadin" name="cinsiyet" /> Kadın
                 </label>
             </div>
         </div>
@@ -63,17 +67,17 @@
             <div class="dilDiv">
                 <label id="dil-label">Dil bilgisi:</label>
                 <label>
-                    <input type="checkbox" value="turkce" /> Türkçe
+                    <input autocomplete="off" type="checkbox" value="turkce" /> Türkçe
                 </label>
                 <label>
-                    <input type="checkbox" value="ingilizce" /> İngilizce
+                    <input autocomplete="off" type="checkbox" value="ingilizce" /> İngilizce
                 </label>
             </div>
         </div>
         <div class="mainDiv">
             <div class="detayDiv">
                 <label id="detay-label">Son çalıştığınız firma bilgileri (Firma ismi, Telefon numarası):</label>
-                <textarea id="detay" name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
+                <textarea spellcheck="false" id="detay" name="detay" rows="3" cols="20" placeholder="Lütfen doldurunuz"></textarea>
             </div>
         </div>
         <button id="submit-button" type="submit">Gönder</button>
