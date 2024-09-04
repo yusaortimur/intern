@@ -16,22 +16,13 @@ body {
     font-family: 'Extended', sans-serif;
     font-weight: bold;
     background-color: black;
-}
-
-.unselectable {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .mainLR {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .mainLeftLogo {
