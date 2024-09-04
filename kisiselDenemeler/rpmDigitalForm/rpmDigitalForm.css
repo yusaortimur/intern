@@ -58,7 +58,7 @@ select:focus,
 textarea:focus,
 button:hover,
 h1:hover {
-    font-size: 45px;
+    font-size: 35px;
     transition: all 1000ms linear;
 }
 
@@ -136,7 +136,7 @@ textarea {
     width: 100%;
     max-width: 700px;
     min-width: 250px;
-    margin: 20px auto;
+    margin: 0;
     border-radius: 20px;
     background-color: rgba(180, 180, 180, 0.171);
     color: rgb(255, 255, 255);
