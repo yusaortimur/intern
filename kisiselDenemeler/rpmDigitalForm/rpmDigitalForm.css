@@ -54,11 +54,11 @@ button {
 
 label:active,
 input:focus,
-select:focus,
 textarea:focus,
+select:focus,
 button:hover,
 h1:hover {
-    font-size: 35px;
+    font-size: 25px;
     transition: all 1000ms linear;
 }
 
