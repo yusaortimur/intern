@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -14,34 +18,30 @@ body {
     user-select: none;
 }
 
-.totalMain {
-    width: 1903px;
-    height: 720px;
+.topTotalMain {
+    margin: 80px 0 112px 0;
+}
 
+.totalMain {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 .main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: auto;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 440px;
-    margin-right: 465.5px;
-    margin-top: 72px;
-    margin-bottom: 112px;
 }
 
 .titleLogoExplanation {
-    width: 548px;
-    height: 298px;
-    padding-right: 40px;
+    width: 28vw;
+    height: 15vh;
+    padding-right: 2vw;
 }
 
 .titleLogoMain {
-    width: 548px;
+    width: 288px;
     height: 54px;
     padding-top: 90px;
     padding-bottom: 16px;
@@ -55,8 +55,8 @@ body {
 }
 
 .explanation {
-    width: 500px;
-    height: 96px;
+    width: 26vw;
+    height: 5vh;
     margin-top: 10px;
     padding: 20px;
     font-size: 29px;
@@ -242,8 +242,8 @@ body {
     list-style-type: none;
     text-decoration: none;
     padding-top: 20px;
-    margin-left: 461.5px;
-    margin-right: 461.5px;
+    margin-left: 24vw;
+    margin-right: 24vw;
     width: 980px;
     height: 137px;
 }
@@ -266,6 +266,7 @@ body {
 
 .link {
     padding-left: 11px;
+    text-align: justify;
 }
 
 .link:link {
@@ -284,4 +285,51 @@ body {
 .copyright {
     padding-left: 10px;
     padding-top: 10;
+}
+
+@media screen and (max-width:1025px) {
+    .footerList {
+        width: 95vw;
+        margin: 0;
+    }
+}
+
+@media (max-width:980px) {
+    .main {
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleLogoMain,
+    .totalMain {
+        padding: 0 0 16px 0;
+    }
+
+    .explanation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 400px;
+        height: 84px;
+        font-size: 24px;
+    }
+    .titleLogo{
+        margin: 0;
+        padding: 0;
+    }
+
+    .titleLogoMain {
+    }
+
+    .titleLogoExplanation {
+        margin: 0 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
