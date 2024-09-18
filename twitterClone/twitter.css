@@ -33,17 +33,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 980px;
+    width: 51vw;
     height: 905px;
-    padding: 0px 32px 0px 0px;
-    margin-left: -270px;
+    padding: 0px 1.5vw 0px 0px;
+    margin-left: -14vw;
 }
 
 .mainLogo {
     object-fit: contain;
     width: 57%;
     padding-top: 10px;
-    padding-right: 135px;
+    padding-right: 7vw;
     padding-bottom: 25px;
     pointer-events: none;
 }
@@ -210,13 +210,11 @@ body {
     background-color: rgba(32, 150, 228, 0.095);
 }
 
-.footerNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 1887px;
+.footer {
+    width: 95vw;
+    text-align: center;
 }
+
 
 .link,
 .copyright {
@@ -227,8 +225,49 @@ body {
     font-size: 13px;
     padding-right: 17px;
     margin-bottom: -30px;
+    height: 15px;
 }
 
 .link:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width:1020px) {
+    .mainLR {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainLogo {
+        height: 60px;
+    }
+
+    .mainLeftLogo {
+        height: 36px;
+        width: 140px;
+        padding: 30px 0 60px 30px;
+        margin-left: -250px
+    }
+
+    .mainRight {
+        margin: 0 0 50px 30px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .mainTitleDiv{
+        width: 420px;
+        height: 90px;
+    }
+    .mainTitle {
+        font-size: 40px;
+        line-height: normal;
+    }
+    .title{
+        font-size: 23px;
+    }
 }
