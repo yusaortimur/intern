@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide In/Out Div</title>
+    <style>
+        /* Ana stil */
+        #sidePanel {
+            width: 250px;
+            height: 100vh;
+            /* Yüksekliği tam ekran */
+            background-color: lightblue;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            /* Başlangıçta gizlenmiş */
+            transition: left 0.5s ease;
+            
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #slideButton {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidePanel">
+        <!-- Buraya içerik ekleyebilirsiniz -->
+        <h2>Side Panel</h2>
+        <p>Bu panel açılıp kapanabilir.</p>
+    </div>
+
+    <button id="slideButton">Toggle Panel</button>
+
+    <script>
+        document.getElementById('slideButton').addEventListener('click', function () {
+            let sidePanel = document.getElementById('sidePanel');
+
+            // Şu anki pozisyonu kontrol et
+            if (sidePanel.style.left === '0px') {
+                sidePanel.style.left = '-250px'; // Kapat
+            } else {
+                sidePanel.style.left = '0px'; // Aç
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,718 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "roobert", sans-serif;
+    text-shadow: none;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 14, 16);
+}
+
+@font-face {
+    font-family: roobert;
+
+    src: url(https://static1.squarespace.com/static/61805088a13441018ea5ff98/t/6290c9c83b09d5791eaabc09/1653656008106/Roobert-Regular.otf);
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-weight: normal;
+}
+
+.browseButton,
+.browsePButton,
+.threeDotsButton,
+.searchButton,
+.primeGamingButton,
+.logInButton,
+.signInButton,
+.accountButton,
+.narrowButton,
+.centerLeftDivsButton,
+.centerRightStreamSliderLeftButton,
+.centerRightStreamSliderRightButton,
+.footerButton {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.threeDotsButton:hover,
+.primeGamingButton:hover,
+.accountButton:hover,
+.centerRightStreamSliderLeftButton:hover,
+.centerRightStreamSliderRightButton:hover {
+    background-color: #28282b;
+}
+
+.browseButton,
+.threeDotsButton,
+.primeGamingButton,
+.accountButton,
+.narrowButton,
+.centerRightStreamSliderLeftButton,
+.centerRightStreamSliderRightButton {
+    width: 30px;
+    height: 30px;
+}
+
+.browseSvg,
+.narrowSvg,
+.accountButtonSvg,
+.threeDotsButtonSvg,
+.centerRightStreamSliderLeftButtonSvg,
+.centerRightStreamSliderRightButtonSvg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.primeGamingButtonSvg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #18181b;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 1px 3px black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.twitchLeftTopLogoDiv {
+    padding: 0 10px 0 10px;
+}
+
+.twitchLeftTopLogo {
+    width: 28px;
+    height: 33px;
+}
+
+.browseButtonDiv {
+    display: none;
+}
+
+.browsePDiv {
+    padding: 0 20px 0 20px;
+}
+
+
+.browseP {
+    font-size: 18px;
+}
+
+.browseP:hover {
+    color: #ae78ff;
+}
+
+.threeDotsDiv {
+    padding: 0 10px 0 10px;
+}
+
+.threeDotsButton {
+    background-color: #18181b;
+}
+
+.navCenter {
+    background-color: #18181b;
+}
+
+.searchDiv {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInputDiv {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput:focus {
+    border: 3px solid #ae78ff;
+    box-shadow: 0 0 10px #ae78ff;
+}
+
+.searchInput {
+    background-color: #18181b;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid rgb(103, 103, 107);
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 350px;
+    height: 35px;
+    text-indent: 10px;
+}
+
+.searchInput::placeholder {
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: rgb(158, 158, 158);
+}
+
+
+.sb1 {
+    border: none;
+    outline: none;
+    height: 35px;
+    background-color: #28282b;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: no-drop;
+}
+
+.sb2 {
+    display: none;
+}
+
+.searchButtonSvg {
+    width: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    fill: currentColor;
+}
+
+
+.navRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.primeGamingDiv {
+    width: 30px;
+    height: 30px;
+}
+
+.primeGamingButtonSvg {
+    padding: 5px;
+}
+
+.signInUpDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signLogDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInButton {
+    width: 87px;
+    height: 30px;
+    background-color: #303030;
+    margin: 0 5px 0 10px;
+}
+
+.logInButton:hover {
+    background-color: #474747;
+}
+
+.logInButton:active,
+.logP:active {
+    background-color: #616060;
+}
+
+.signInButton {
+    width: 66px;
+    height: 30px;
+    background-color: #9147ff;
+    margin: 0 10px 0 5px;
+}
+
+.signInButton:hover {
+    background-color: #772ce8;
+}
+
+.signInButton:active,
+.signP:active {
+    background-color: #721cf3;
+}
+
+.accountDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountDiv {
+    margin: 0 10px 0 0;
+}
+
+.bodyCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.centerLeft {
+    background-color: rgb(31, 31, 35);
+    width: 240px;
+    height: 168vh;
+}
+
+.centerLeftDivs {
+    margin: 10px;
+}
+
+.centerLeftDivs,
+.centerLeftStreamerPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centerLeftDivsButton {
+    width: 100%;
+    height: 45px;
+    border-radius: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.narrowButton:hover,
+.centerLeftDivsButton:hover {
+    background-color: rgb(55, 55, 55);
+}
+
+.centerLeftImgDiv,
+.centerLeftStreamDetailDiv,
+.centerLeftDivsButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centerLeftImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.centerLeftStreamerName,
+.centerLeftStreamerGame {
+    text-align: left;
+}
+
+.centerLeftStreamerName {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.centerLeftStreamerGame {
+    font-size: 13px;
+    color: gray;
+}
+
+.redDot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.centerRight {
+    background-color: rgb(14, 14, 16);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerRightStreamSlider {
+    min-height: 25rem;
+    height: 350px;
+    width: 100%;
+    transition: padding .45s ease 0s;
+    padding: 2rem 3rem 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centerRightStreamSliderCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerRightStreamSliderDivs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerRightStreamSliderDivsLeft,
+.sliderStream {
+    max-height: 300px;
+}
+
+.centerRightStreamSliderDivsRight {
+    width: 220px;
+    height: 300px;
+    background-color: #28282b;
+}
+
+.sliderDetailTopLeftLogoDiv {
+    margin: 15px;
+}
+
+.sliderDetailTopLeftLogoDiv,
+.sliderStreamerLogo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sliderDetailTop,
+.sliderDetailBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sliderDetailTopRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.sliderStreamerDetails {
+    color: #9147ff;
+}
+
+.sliderStreamerDetails:hover {
+    text-decoration: underline;
+}
+
+.sliderDetailBottomDiv {
+    margin: 10px;
+    padding: 0 5px 5px 5px;
+    background-color: #616060;
+    border-radius: 95px;
+}
+
+.sliderDetailBottomDivA {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.centerRightStreamMainStreams {
+    display: flex;
+    flex-direction: row;
+}
+
+.centerRightStreamMain {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.centerRightStreamMainInfo {
+    width: 100%;
+    height: 3rem;
+}
+
+.centerRightStreamBoxDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.streamBoxImgDiv {
+    margin-bottom: 10px;
+}
+
+.streamBoxImg {
+    width: 100%;
+    height: 100%;
+}
+
+.streamBoxImg:hover {
+    box-shadow: -1px 1px #721cf3, -2px 2px #721cf3, -3px 3px #721cf3, -4px 4px #721cf3, -5px 5px #721cf3, -6px 6px #721cf3, -7px 7px #721cf3, -8px 8px #721cf3;
+    transform: translate(8px, -8px);
+    transition: 0.5s ease;
+}
+
+.streamBoxDetailDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.streamBoxDetailLogo,
+.boxDetailLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.streamBoxDetailText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 15px;
+}
+
+.boxDetailText {
+    margin-bottom: 2px;
+}
+
+.boxDetailText:hover {
+    color: #9147ff;
+}
+
+.verifyPartner {
+    fill: #9147ff
+}
+
+.footer,
+.footerDiv {
+    width: 100%;
+    height: 60px;
+    background-color: #401481;
+    position: fixed;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.footerLogo {
+    width: 40px;
+    height: 40px;
+}
+
+.footerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerDivLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footerLeftText,
+.footerRightText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.footerLeftText,
+.footerButton {
+    font-weight: bold;
+}
+
+.footerDivRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 40px;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.footerButton {
+    color: #18181b;
+}
+
+
+@media screen and (max-width:1900px) {
+    .div5 {
+        display: none;
+    }
+
+    .centerRightStreamMainStreams {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerRightStreamBoxDiv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1575px) {
+    .div4 {
+        display: none;
+    }
+
+    .centerRightStreamMainStreams {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerRightStreamBoxDiv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .div3 {
+        display: none;
+    }
+
+    .centerRightStreamMainStreams {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerRightStreamBoxDiv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .centerRightStreamSliderDivsRight {
+        display: none;
+    }
+
+    .centerRightStreamMainStreams {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerRightStreamBoxDiv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .centerLeft {
+        width: 50px;
+    }
+
+    .centerLeftStreamerDetailDiv,
+    .centerLeftStreamDetailDiv,
+    .centerLeftStreamerName {
+        display: none;
+    }
+
+    .centerLeftDivs,
+    .centerLeftStreamerPage {
+        width: 50px;
+    }
+
+    .centerLeftDivs {
+        width: 50px;
+        height: 30px;
+    }
+
+    .footerRightText {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .centerLeft {
+        min-width: 240px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .searchInputDiv,
+    .searchInput,
+    .sb1 {
+        display: none;
+    }
+
+    .sb2,
+    .searchButtonSvg {
+        display: block;
+        background-color: transparent;
+    }
+
+    .browseButtonDiv {
+        display: block;
+    }
+
+    .browsePDiv {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .sliderStream {
+        width: 100%;
+    }
+}

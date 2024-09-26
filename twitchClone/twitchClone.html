@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="png" href="https://www.edigitalagency.com.au/wp-content/uploads/Twitch-icon-purple.png"
+        type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Twitch</title>
+    <link rel="stylesheet" href="twitchClone.css">
+</head>
+
+<body>
+    <header class="bodyTop">
+        <nav class="navBar">
+            <div class="navLeft">
+                <div class="twitchLeftTopLogoDiv">
+                    <img class="twitchLeftTopLogo"
+                        src="https://www.edigitalagency.com.au/wp-content/uploads/Twitch-icon-purple.png"
+                        alt="twitchLeftTopLogo">
+                </div>
+                <div class="browseButtonDiv">
+                    <button class="browseButton">
+                        <svg class="browseSvg" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px"
+                            y="0px" class="ScSvg-sc-1hrsqw6-1 ihOSMR">
+                            <g>
+                                <path d="M5 2a2 2 0 00-2 2v8a2 2 0 002 2V4h8a2 2 0 00-2-2H5z"></path>
+                                <path fill-rule="evenodd"
+                                    d="M7 8a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H9a2 2 0 01-2-2V8zm2 0h6v8H9V8z"
+                                    clip-rule="evenodd"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="browsePDiv">
+                    <button class="browsePButton">
+                        <a href="">
+                            <p class="browseP">Gözat</p>
+                        </a>
+                    </button>
+                </div>
+                <div class="threeDotsDiv">
+                    <button class="threeDotsButton" aria-label="Diğer Seçenekler">
+                        <a href="">
+                            <svg class="threeDotsButtonSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                fill="#e8eaed">
+                                <path
+                                    d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="navCenter">
+                <div class="searchDiv">
+                    <input class="searchInput" type="search" placeholder="Ara">
+                    <button class="searchButton sb1">
+                        <svg class="searchButtonSvg" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"
+                            data-a-selector="tw-core-button-icon">
+                            <g>
+                                <path fill-rule="evenodd"
+                                    d="M13.192 14.606a7 7 0 111.414-1.414l3.101 3.1-1.414 1.415-3.1-3.1zM14 9A5 5 0 114 9a5 5 0 0110 0z"
+                                    clip-rule="evenodd"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="navRight">
+                <button class="searchButton sb2">
+                    <svg class="searchButtonSvg" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"
+                        data-a-selector="tw-core-button-icon">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M13.192 14.606a7 7 0 111.414-1.414l3.101 3.1-1.414 1.415-3.1-3.1zM14 9A5 5 0 114 9a5 5 0 0110 0z"
+                                clip-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                </button>
+                <div class="primeGamingDiv">
+                    <button class="primeGamingButton" aria-label="Prime Gaming avantajları">
+                        <a href="">
+                            <svg class="primeGamingButtonSvg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                                role="presentation">
+                                <path fill-rule="evenodd"
+                                    d="M13.798 10.456 10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+                <div class="signInUpDiv">
+                    <div class="signLogDiv">
+                        <button class="logInButton">
+                            <a href="">
+                                <p class="logP">Oturum Aç</p>
+                            </a>
+                        </button>
+                        <button class="signInButton">
+                            <a href="">
+                                <p class="signP">Kayıt ol</p>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="accountDiv">
+                        <button class="accountButton">
+                            <a href="">
+                                <svg class="accountButtonSvg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                                    role="presentation">
+                                    <path fill-rule="evenodd"
+                                        d="M5 7a5 5 0 1 1 6.192 4.857A2 2 0 0 0 13 13h1a3 3 0 0 1 3 3v2h-2v-2a1 1 0 0 0-1-1h-1a3.99 3.99 0 0 1-3-1.354A3.99 3.99 0 0 1 7 15H6a1 1 0 0 0-1 1v2H3v-2a3 3 0 0 1 3-3h1a2 2 0 0 0 1.808-1.143A5.002 5.002 0 0 1 5 7zm5 3a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bodyCenter">
+        <div class="centerLeft">
+            <div class="centerLeftDivs">
+                <p class="centerLeftStreamerName">ÖNERİLEN KANALLAR</p>
+                <button class="narrowButton">
+                    <svg class="narrowSvg" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" role="presentation"
+                        aria-hidden="true" focusable="false" class="ScIconSVG-sc-1q25cff-1 jpczqG">
+                        <g>
+                            <path d="M16 16V4h2v12h-2zM6 9l2.501-2.5-1.5-1.5-5 5 5 5 1.5-1.5-2.5-2.5h8V9H6z"></path>
+                        </g>
+                    </svg>
+                </button>
+                <!-- <script>
+                    document.getElementById('narrowButton').addEventListener('click', function () {
+                        let sidePanel = document.getElementById('centerLeft');
+
+                        // Şu anki pozisyonu kontrol et
+                        if (sidePanel.style.left === '0px') {
+                            sidePanel.style.left = '-250px'; // Kapat
+                        } else {
+                            sidePanel.style.left = '0px'; // Aç
+                        }
+                    });
+                </script> -->
+            </div>
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/olofmeister">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/31b9e758-02e4-4be7-98a7-184e4941e02d-profile_image-70x70.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">olofmeister</p>
+                            <p class="centerLeftStreamerGame">Counter-Strike</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">2 B</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/anomaly">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/anomaly-profile_image-0be1a6abbc7a9f45-70x70.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">Anomaly</p>
+                            <p class="centerLeftStreamerGame">Counter-Strike</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">827</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/cct_cs">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/577a78c1-9d8a-4a25-ac71-abbcabfb9fd0-profile_image-70x70.jpeg"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">CCT_CS</p>
+                            <p class="centerLeftStreamerGame">Counter-Strike</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">270</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/fl0m">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/fl0m-profile_image-efa66f8f4aa42f40-70x70.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">fl0m</p>
+                            <p class="centerLeftStreamerGame">Counter-Strike</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">2,5 B</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/eplcs_en2">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/89674757-2d46-4e1b-b2c0-b143ccdc5a6c-profile_image-70x70.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">eplcs_en2</p>
+                            <p class="centerLeftStreamerGame">Counter-Strike</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">550</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/renyan">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/45bd34f1-d0ca-4324-9a9e-7391b3df1827-profile_image-70x70.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">renyan</p>
+                            <p class="centerLeftStreamerGame">Sadece Sohbet</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">609</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/gorgc">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/gorgc-profile_image-469e05d25a1e8594-50x50.jpeg"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">Gorgc</p>
+                            <p class="centerLeftStreamerGame">Dota 2</p>
+                        </div>
+                    </div>
+
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">8,1 B</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="centerLeftStreamerPage" href="https://www.twitch.tv/thatguygp">
+                <div class="centerLeftDivsButton">
+                    <div class="centerLeftImgDiv">
+                        <img class="centerLeftImg"
+                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/7b14faef-c35a-4d96-9586-94670372b826-profile_image-50x50.png"
+                            alt="streamerImg">
+                        <div class="centerLeftStreamerDetailDiv">
+                            <p class="centerLeftStreamerName">ThatGuyGP</p>
+                            <p class="centerLeftStreamerGame">Grand Theft Auto V</p>
+                        </div>
+                    </div>
+                    <div class="centerLeftStreamDetailDiv">
+                        <div class="redDot"></div>
+                        <p class="streamViewer">273</p>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+
+        <div class="centerRight">
+            <div class="centerRightStreamSlider">
+                <div class="centerRightStreamSliderLeft">
+                    <button class="centerRightStreamSliderLeftButton">
+                        <svg class="centerRightStreamSliderLeftButtonSvg" viewBox="0 0 20 20" focusable="false"
+                            aria-hidden="true" role="presentation">
+                            <path d="M13.5 14.5 9 10l4.5-4.5L12 4l-6 6 6 6 1.5-1.5z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="centerRightStreamSliderCenter">
+                    <div class="centerRightStreamSliderDivs">
+                        <div class="centerRightStreamSliderDivsLeft">
+                            <img class="sliderStream"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1719426374"
+                                alt="streamImg">
+                        </div>
+                        <div class="centerRightStreamSliderDivsRight">
+                            <div class="sliderDetail">
+                                <div class="sliderDetailTop">
+                                    <div class="sliderDetailTopLeftLogoDiv">
+                                        <img class="sliderStreamerLogo"
+                                            src="https://static-cdn.jtvnw.net/jtv_user_pictures/2b472a91-3872-4ac4-b1d6-5fecfb859551-profile_image-150x150.png"
+                                            alt="sliderLogo">
+                                    </div>
+                                    <div class="sliderDetailTopRight">
+                                        <a class="sliderStreamerDetails" href="https://www.twitch.tv/fawres">Fawres</a>
+                                        <a class="sliderStreamerDetails"
+                                            href="https://www.twitch.tv/directory/category/counter-strike">Counter-Strike</a>
+                                        <p>500 izleyici</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sliderDetailBottom">
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA"
+                                        href="https://www.twitch.tv/directory/all/tags/English">English</a>
+                                </div>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA"
+                                        href="https://www.twitch.tv/directory/all/tags/Türkçe">Türkçe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="centerRightStreamSliderRight">
+                    <button class="centerRightStreamSliderRightButton">
+                        <svg class="centerRightStreamSliderRightButtonSvg" viewBox="0 0 20 20" focusable="false"
+                            aria-hidden="true" role="presentation">
+                            <path d="M6.5 5.5 11 10l-4.5 4.5L8 16l6-6-6-6-1.5 1.5z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="centerRightStreamMain">
+                <div class="centerRightStreamMainInfo">
+                    <h3>Seveceğinizi düşündüğümüz <a class="sliderStreamerDetails" href="">Canlı Kanallar</a></h3>
+                </div>
+                <div class="centerRightStreamMainStreams">
+                    <div class="centerRightStreamBoxDiv">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Dota 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Dota 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div2">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Euro Truck Simulator 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Euro Truck Simulator 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Türkçe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div3">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1719426374"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://static-cdn.jtvnw.net/jtv_user_pictures/2b472a91-3872-4ac4-b1d6-5fecfb859551-profile_image-150x150.png"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Counter-Strike Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Counter-Strike</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Counter-Strike</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div4">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Rainbow Six Siege Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Rainbow Six Siege</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Birinci Şahıs Nişancı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div5">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">League of Legends Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">League of Legends</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="centerRightStreamMain">
+                <div class="centerRightStreamMainInfo">
+                    <h3><a class="sliderStreamerDetails" href="">Sanat ve Kreatif</a></h3>
+                </div>
+                <div class="centerRightStreamMainStreams">
+                    <div class="centerRightStreamBoxDiv">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Dota 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Dota 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div2">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Euro Truck Simulator 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Euro Truck Simulator 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Türkçe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div3">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1719426374"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://static-cdn.jtvnw.net/jtv_user_pictures/2b472a91-3872-4ac4-b1d6-5fecfb859551-profile_image-150x150.png"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Counter-Strike Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Counter-Strike</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Counter-Strike</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div4">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Rainbow Six Siege Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Rainbow Six Siege</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Birinci Şahıs Nişancı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div5">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">League of Legends Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">League of Legends</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="centerRightStreamMain">
+                <div class="centerRightStreamMainInfo">
+                    <h3>Önerilen <a class="sliderStreamerDetails" href="">Counter-Strike</a> Kanalları</h3>
+                </div>
+                <div class="centerRightStreamMainStreams">
+                    <div class="centerRightStreamBoxDiv">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_616x353.jpg?t=1724428927"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Dota 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Dota 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div2">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://steamuserimages-a.akamaihd.net/ugc/954083319071635123/4EED2D3B7737533D4AF5D4A1A951F09BC924BDBF/?imw=512&imh=288&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Euro Truck Simulator 2 Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Euro Truck Simulator 2</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Türkçe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div3">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1719426374"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://static-cdn.jtvnw.net/jtv_user_pictures/2b472a91-3872-4ac4-b1d6-5fecfb859551-profile_image-150x150.png"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Counter-Strike Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Counter-Strike</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Counter-Strike</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div4">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://cdn1.epicgames.com/offer/carnation/Share_Image_1920x1080-3_1920x1080-6e2d079f24db0a35285007191358978b?resize=1&w=480&h=270&quality=medium"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">Rainbow Six Siege Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Rainbow Six Siege</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">Birinci Şahıs Nişancı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="centerRightStreamBoxDiv div5">
+                        <div class="streamBoxImgDiv">
+                            <img class="streamBoxImg"
+                                src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                alt="streamBoxImg">
+                        </div>
+                        <div class="streamBoxDetailDiv">
+                            <div class="streamBoxDetailLogo">
+                                <img class="boxDetailLogo"
+                                    src="https://www.cumhuriyet.com.tr/Archive/2024/1/4/2159246/kapak_132413.jpg"
+                                    alt="boxLogo">
+                            </div>
+                            <div class="streamBoxDetailText">
+                                <a class="boxDetailText" href="">League of Legends Oynuyoruz</a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">Fawres <svg
+                                        class="verifyPartner" width="12" height="12" viewBox="0 0 12 12"
+                                        aria-label="Onaylı Partner">
+                                        <path fill-rule="evenodd"
+                                            d="M10 2 6 1 2 2 1 6l1 4 4 1 4-1 1-4-1-4ZM5.5 8.5 9 5 7.5 3.5l-2 2-1-1L3 6l2.5 2.5Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></a>
+                                <a class="centerLeftStreamerGame boxDetailText" href="">League of Legends</a>
+                                <div class="sliderDetailBottomDiv">
+                                    <a class="sliderDetailBottomDivA" href="">English</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bodyBottom">
+        <footer class="footer">
+            <div class="footerDiv">
+                <div class="footerDivLeft">
+                    <img class="footerLogo" src="https://assets.twitch.tv/assets/coolcat-edacb6fbd813ce2f0272.png"
+                        alt="footerLogo">
+                    <p class="footerLeftText">Twitch topluluğuna katılın!</p>
+                    <p class="footerRightText">Dilediğiniz yerden en iyi canlı yayınları keşfedin</p>
+                </div>
+                <div class="footerDivRight">
+                    <a class="footerButtonA" href="">
+                        <div class="footerButtonDiv">
+                            <button class="footerButton">
+                                Kaydol
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
