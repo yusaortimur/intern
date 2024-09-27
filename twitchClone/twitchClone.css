@@ -14,7 +14,6 @@ body {
 
 @font-face {
     font-family: roobert;
-
     src: url(https://static1.squarespace.com/static/61805088a13441018ea5ff98/t/6290c9c83b09d5791eaabc09/1653656008106/Roobert-Regular.otf);
 }
 
@@ -297,7 +296,7 @@ p {
 }
 
 .centerLeftDivs {
-    margin: 10px;
+    margin: 5px 10px 0 10px;
 }
 
 .centerLeftDivs,
@@ -315,7 +314,6 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 .narrowButton:hover,
 .centerLeftDivsButton:hover {
@@ -370,11 +368,10 @@ p {
 }
 
 .centerRightStreamSlider {
-    min-height: 25rem;
     height: 350px;
     width: 100%;
     transition: padding .45s ease 0s;
-    padding: 2rem 3rem 0 3rem;
+    padding: 0 3rem 0 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -579,6 +576,10 @@ p {
     width: 60px;
     height: 30px;
     border-radius: 5px;
+}
+
+.footerDivRight:hover {
+    background-color: rgb(220, 220, 220);
 }
 
 .footerButton {
