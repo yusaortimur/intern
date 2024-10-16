@@ -1,0 +1,40 @@
+header {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftDiv {
+    width: 30%;
+}
+
+.rightDiv {
+    width: 70%;
+}
+
+.leftP {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+
+.rightP {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
