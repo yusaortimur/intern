@@ -24,7 +24,19 @@ p {
     font-weight: bolder;
 }
 
-* {
+.borderRecommend {
+    border: 5px dashed rgb(125, 100, 60);
+}
+
+.border {
+    border: 1px solid rgb(125, 100, 60);
+}
+
+.recommend {
+    text-shadow: 0px 5px 10px rgb(125, 100, 60);
+}
+
+* { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
@@ -42,6 +54,8 @@ header {
     text-align: center;
     border-bottom: 4px solid rgb(180, 146, 83);
     border-top: 4px solid rgb(180, 146, 83);
+    position: sticky;
+    top: 0;
 }
 
 .headerTitle {
@@ -58,7 +72,7 @@ header {
 
 .headerLink {
     padding: 5px;
-    background-color: rgb(223, 202, 163);
+    background-color: #dfcaa3;
     border: 1px solid rgb(180, 146, 83);
     color: rgb(125, 100, 60);
     border-radius: 8px;
@@ -76,6 +90,11 @@ main {
     align-items: center;
 }
 
+.mainH2 {
+    margin: 20px auto 30px auto;
+    text-align: center;
+}
+
 .mainTitle {
     font-size: 25px;
     padding-top: 25px;
@@ -91,16 +110,16 @@ main {
     border-top: 4px solid rgb(180, 146, 83);
 }
 
-.mainDiv {
+.main1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.main {
+.main1Box {
     margin: 45px;
-    width: 33;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +146,7 @@ main {
 
 .main2Photo {
     width: 100%;
+    max-width: 1050px;
     height: 100%;
     object-fit: cover;
     object-position: 15% 75%;
@@ -148,8 +168,63 @@ main {
 .main2A {
     margin-top: 10px;
     padding: 8px;
-    background-color: wheat;
+    background-color: #dfcaa3;
     border: 1px solid rgb(180, 146, 83);
     color: rgb(121, 95, 47);
     border-radius: 10px;
+}
+
+.main3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.main3Box {
+    background-color: #dfcaa3;
+    border-radius: 120px 120px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 50px;
+    transition: transform .5s linear, box-shadow .5s linear;
+}
+
+.main3Box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 20px 5px rgb(121, 95, 47);
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    position: static;
+    bottom: 0px;
+    background-color: rgb(121, 95, 47);
+}
+
+.footerDivsDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerMainDiv {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20%;
+}
+
+.footerDiv{
+    color: #dfcaa3;
+}
+
+svg{
+    width: 48px;
+    height: 48px;
+    fill: #dfcaa3;
 }

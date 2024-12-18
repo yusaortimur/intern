@@ -483,12 +483,12 @@ p {
 .streamBoxImg {
     width: 100%;
     height: 100%;
+    transition: box-shadow 0.5s linear, transform 0.5s linear;
 }
 
 .streamBoxImg:hover {
-    box-shadow: -1px 1px #721cf3, -2px 2px #721cf3, -3px 3px #721cf3, -4px 4px #721cf3, -5px 5px #721cf3, -6px 6px #721cf3, -7px 7px #721cf3, -8px 8px #721cf3;
+    box-shadow: -8px 8px #721cf3;
     transform: translate(8px, -8px);
-    transition: 0.5s ease;
 }
 
 .streamBoxDetailDiv {
