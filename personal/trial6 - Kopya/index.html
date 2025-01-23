@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPM Digital Co. - Ana Sayfa</title>
+    <link rel="icon" href="https://as2.ftcdn.net/v2/jpg/04/38/82/85/360_F_438828559_QccWdc3zAULf7uLTzekIt5XlOEnGj6X0.jpg" type="image/x-icon">
+    <script>
+        function sayfalar(sayfaId) {
+            const sayfa = document.querySelectorAll('.sayfa');
+            sayfa.forEach(sayfa => sayfa.classList.add('gizleGoster'));
+            document.getElementById(sayfaId).classList.remove('gizleGoster');
+        }
+
+        function kKayit() {
+            const ad = document.getElementById('ad').value;
+            const soyad = document.getElementById('soyad').value;
+            const email = document.getElementById('email').value;
+            const kullaniciAdi = document.getElementById('kullaniciAdi').value;
+            const sifre = document.getElementById('sifre').value;
+            const sifreTekrar = document.getElementById('sifreTekrar').value;
+
+            if (!ad || !soyad || !email || !kullaniciAdi || !sifre || !sifreTekrar) {
+                alert('Lütfen tüm alanları doldurun.');
+                return;
+            }
+
+            if (sifre !== sifreTekrar) {
+                alert('Şifreler uyuşmuyor.');
+                return;
+            }
+
+            const kullanici = { ad, soyad, email, kullaniciAdi, sifre };
+            localStorage.setItem('kullanici', JSON.stringify(kullanici));
+            alert('Kayıt başarılı! Giriş yapabilirsiniz.');
+            sayfalar('girisDiv');
+        }
+
+        function kGiris() {
+            const kullaniciAdi = document.getElementById('gKAdi').value;
+            const sifre = document.getElementById('gKSifre').value;
+
+            const Kkullanici = JSON.parse(localStorage.getItem('kullanici'));
+
+            if (Kkullanici && Kkullanici.kullaniciAdi === kullaniciAdi && Kkullanici.sifre === sifre) {
+                alert('Giriş başarılı!');
+                profil(Kkullanici);
+                sayfalar('profilDiv');
+            } else {
+                alert('Kullanıcı adı veya şifre yanlış.');
+            }
+        }
+
+        function profil(kullanici) {
+            document.getElementById('kAdi').textContent = kullanici.ad;
+            document.getElementById('kSoyadi').textContent = kullanici.soyad;
+            document.getElementById('kEmail').textContent = kullanici.email;
+        }
+
+        function kCikis() {
+            alert('Çıkış yaptınız.');
+            sayfalar('main-sayfa');
+        }
+
+        function emailSifreDegistir() {
+            const yeniEmail = document.getElementById('yeniEmail').value;
+            const eskiSifre = document.getElementById('eskiSifre').value;
+            const yeniSifre = document.getElementById('yeniSifre').value;
+            const yeniSifreTekrar = document.getElementById('yeniSifreTekrar').value;
+
+            const Kkullanici = JSON.parse(localStorage.getItem('kullanici'));
+
+            if (!Kkullanici || Kkullanici.sifre !== eskiSifre) {
+                alert('Eski şifrenizi yanlış girdiniz.');
+                return;
+            }
+
+            if (yeniSifre && yeniSifre !== yeniSifreTekrar) {
+                alert('Yeni şifreler uyuşmuyor.');
+                return;
+            }
+
+            if (yeniEmail) Kkullanici.email = yeniEmail;
+            if (yeniSifre) Kkullanici.sifre = yeniSifre;
+
+            localStorage.setItem('kullanici', JSON.stringify(Kkullanici));
+            alert('Bilgileriniz başarıyla güncellendi!');
+            profil(Kkullanici);
+            sayfalar('profilDiv');
+        }
+    </script>
+
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #303030;
+            text-align: center;
+            background-image: url(https://cdn.mos.cms.futurecdn.net/xaycNDmeyxpHDrPqU6LmaD.jpg);
+            background-size: cover;
+            backdrop-filter: blur(100px) brightness(100%);
+            -webkit-backdrop-filter: blur(100px) brightness(100%);
+            background-repeat: no-repeat;
+            user-select: none;
+        }
+
+        h1 {
+            color: rgb(40, 40, 40);
+        }
+
+        p, span {
+            font-size: 25px;
+            color: rgb(40, 40, 40);
+        }
+
+        button {
+            margin: 15px 10px;
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            border: solid 1px white;
+            color: black;
+            cursor: pointer;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .sayfaDuzen {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hdr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: #a5a5a5;
+        }
+
+        .sayfa {
+            width: 30%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profil {
+            display: block;
+        }
+
+        .gizleGoster {
+            display: none;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hdr">
+        <div>
+            <h1>RPM Digital Co.</h1>
+        </div>
+        <div>
+            <button onclick="sayfalar('kayitDiv')">Kayıt Ol</button>
+            <button onclick="sayfalar('girisDiv')">Giriş Yap</button>
+        </div>
+    </header>
+
+    <section class="anaBolum">
+        <div class="sayfaDuzen">
+            <div class="sayfa gizleGoster" id="kayitDiv">
+                <h1>Kayıt Ol</h1>
+                <form id="kayitForm">
+                    <input type="text" id="ad" placeholder="Ad" required>
+                    <input type="text" id="soyad" placeholder="Soyad" required>
+                    <input type="email" id="email" placeholder="E-posta" required>
+                    <input type="text" id="kullaniciAdi" placeholder="Kullanıcı Adı" required>
+                    <input type="password" id="sifre" placeholder="Şifre" required>
+                    <input type="password" id="sifreTekrar" placeholder="Şifre (Tekrar)">
+                </form>
+                <div class="butonlar">
+                    <button type="button" onclick="kKayit()">Kayıt Ol</button>
+                    <button onclick="sayfalar('main-sayfa')">Geri</button>
+                </div>
+            </div>
+
+            <div class="sayfa gizleGoster" id="girisDiv">
+                <h1>Giriş Yap</h1>
+                <form id="girisForm">
+                    <input type="text" id="gKAdi" placeholder="Kullanıcı Adı" required>
+                    <input type="password" id="gKSifre" placeholder="Şifre" required>
+                </form>
+                <div class="butonlar">
+                    <button type="button" onclick="kGiris()">Giriş Yap</button>
+                    <button onclick="sayfalar('main-sayfa')">Geri</button>
+                </div>
+            </div>
+
+            <div class="sayfa profil gizleGoster" id="profilDiv">
+                <h1>Hesap Bilgileri</h1>
+                <p>Ad : <span id="kAdi"></span></p>
+                <p>Soyad : <span id="kSoyadi"></span></p>
+                <p>E-posta : <span id="kEmail"></span></p>
+                <button onclick="sayfalar('degistirDiv')">Bilgileri Değiştir</button>
+                <button onclick="kCikis()">Çıkış Yap</button>
+            </div>
+
+            <div class="sayfa gizleGoster" id="degistirDiv">
+                <h1>Bilgileri Güncelle</h1>
+                <form id="degistirForm">
+                    <input type="email" id="yeniEmail" placeholder="Yeni E-posta (Opsiyonel)">
+                    <input type="password" id="eskiSifre" placeholder="Eski Şifre" required>
+                    <input type="password" id="yeniSifre" placeholder="Yeni Şifre (Opsiyonel)">
+                    <input type="password" id="yeniSifreTekrar" placeholder="Yeni Şifre (Tekrar)">
+                </form>
+                <div class="butonlar">
+                    <button type="button" onclick="emailSifreDegistir()">Bilgileri Güncelle</button>
+                    <button onclick="sayfalar('profilDiv')">Geri</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>B2210.032002 Yüşa Örtimür</p>
+    </footer>
+</body>
+</html>

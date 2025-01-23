@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>RPM Digital Co. - Ana Sayfa</title>
+    <link rel="icon" href="https://as2.ftcdn.net/v2/jpg/04/38/82/85/360_F_438828559_QccWdc3zAULf7uLTzekIt5XlOEnGj6X0.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="hdr">
+        <div>
+            <h1>RPM Digital Co.</h1>
+        </div>
+        <div>
+            <button onclick="sayfalar('kayitDiv')">Kayıt Ol</button>
+            <button onclick="sayfalar('girisDiv')">Giriş Yap</button>
+        </div>
+    </header>
+
+    <section class="anaBolum">
+        <div class="sayfaDuzen">
+            <div class="sayfa gizleGoster" id="kayitDiv">
+                <h1>Kayıt Ol</h1>
+                <form id="kayitForm">
+                    <input type="text" id="ad" placeholder="Ad" required>
+                    <input type="text" id="soyad" placeholder="Soyad" required>
+                    <input type="email" id="email" placeholder="E-posta" required>
+                    <input type="text" id="kullaniciAdi" placeholder="Kullanıcı Adı" required>
+                    <input type="password" id="sifre" placeholder="Şifre" required>
+                </form>
+                <div class="butonlar">
+                    <button type="button" onclick="kKayit()">Kayıt Ol</button>
+                    <button onclick="sayfalar('anaSayfa')">Geri</button>
+                </div>
+            </div>
+            <div class="sayfa gizleGoster" id="girisDiv">
+                <h1>Giriş Yap</h1>
+                <form id="girisForm">
+                    <input type="text" id="gKAdi" placeholder="Kullanıcı Adı" required>
+                    <input type="password" id="gKSifre" placeholder="Şifre" required>
+                </form>
+                <div class="butonlar">
+                    <button type="button" onclick="kGiris()">Giriş Yap</button>
+                    <button onclick="sayfalar('anaSayfa')">Geri</button>
+                </div>
+            </div>
+            <div class="sayfa profil gizleGoster" id="profilDiv">
+                <h1>Hesap Bilgileri</h1>
+                <p>Ad : <span id="kAdi"></span></p>
+                <p>Soyad : <span id="kSoyadi"></span></p>
+                <p>E-posta : <span id="kEmail"></span></p>
+
+                <button onclick="kCikis()">Çıkış Yap</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>B2210.032002 Yüşa Örtimür</p>
+    </footer>
+
+    
+</body>
+</html>
