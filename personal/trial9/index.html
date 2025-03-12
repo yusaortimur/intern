@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sinav</title>
+        <script>
+            function topla(){
+                let sayi1=parseFloat(document.getElementById("s1").value);
+                let sayi2=parseFloat(document.getElementById("s2").value);
+                let toplam=sayi1+sayi2;
+
+                document.getElementById("sonuc").textContent=toplam;
+
+                document.body.style.backgroundColor="red";
+                document.body.style.color="aliceblue";
+            }
+        </script>
+        <style>
+            body{
+                color: red;
+                background-color: aliceblue;
+                font-size:22px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <input id="s1" type="text" placeholder="birinci sayıyı giriniz">
+        <input id="s2" type="text" placeholder="ikinci sayıyı giriniz">
+        <button onclick="topla()">topla</button>
+        <p>sonuç: <span id="sonuc"></span></p>
+    </body>
+</html>

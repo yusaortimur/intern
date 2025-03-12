@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sinav</title>
+    <script>
+        function topla() {
+            let sayi1 = parseFloat(document.getElementById("s1").value);
+            let sayi2 = parseFloat(document.getElementById("s2").value);
+            let cevap = sayi1 + sayi2;
+            document.getElementById("sonuc").textContent = cevap;
+            renklerDegis()
+        }
+        function cikart() {
+            let sayi1 = parseFloat(document.getElementById("s1").value);
+            let sayi2 = parseFloat(document.getElementById("s2").value);
+            let cevap = sayi1 - sayi2;
+            document.getElementById("sonuc").textContent = cevap;
+            renklerDegis()
+        }
+        function bol() {
+            let sayi1 = parseFloat(document.getElementById("s1").value);
+            let sayi2 = parseFloat(document.getElementById("s2").value);
+            let cevap = (sayi1 / sayi2).toFixed(3);
+            document.getElementById("sonuc").textContent = cevap;
+            renklerDegis()
+        }
+        function carp() {
+            let sayi1 = parseFloat(document.getElementById("s1").value);
+            let sayi2 = parseFloat(document.getElementById("s2").value);
+            let cevap = sayi1 * sayi2;
+            document.getElementById("sonuc").textContent = cevap;
+            renklerDegis()
+        }
+
+        function renklerDegis() {
+            let arkaRenk = document.body.style.backgroundColor;
+            let yaziRenk = document.body.style.color;
+
+            if (!arkaRenk || !yaziRenk) {
+                arkaRenk = "black";
+                yaziRenk = "white";
+            }
+
+            document.body.style.backgroundColor = yaziRenk;
+            document.body.style.color = arkaRenk;
+        }
+    </script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="s1" type="text" placeholder="birinci sayıyı giriniz">
+    <input id="s2" type="text" placeholder="ikinci sayıyı giriniz">
+    <button onclick="topla()">+</button>
+    <button onclick="cikart()">-</button>
+    <button onclick="bol()">/</button>
+    <button onclick="carp()">*</button>
+    <p>sonuç: <span id="sonuc"></span></p>
+</body>
+
+</html>

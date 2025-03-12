@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Web Page</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("renk").addEventListener("click", function () {
+                document.body.style.backgroundColor = "red";
+            });
+        });
+    </script>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="renk">Renk değiştir</button>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toplama işlemi</title>
+        <script>
+            function topla(){
+                let sayi1=parseFloat(document.getElementById("s1").value);
+                let sayi2=parseFloat(document.getElementById("s2").value);
+                let toplam=sayi1+sayi2;
+
+                document.getElementById("sonuc").textContent=toplam;
+            }
+        </script>
+    </head>
+    <body>
+        <p>iki sayı giriniz</p>
+        <input type="text" id="s1" placeholder="birinci sayıyı giriniz">
+        <input type="text" id="s2" placeholder="ikinci sayıyı giriniz">
+        <button type="button" onclick="topla()">Topla</button>
+        <p>Sonuç: <span id="sonuc"></span></p>
+
+    </body>
+</html>
