@@ -3,21 +3,25 @@
     font-size: 15px;
     padding-right: 2px;
     box-sizing: border-box;
-    color: rgb(227,183,30);
+    color: rgb(227, 183, 30);
 }
 
-h1{
-    color: rgb(18,18,18);
+* {
+    scrollbar-width: none;
+}
+
+h1 {
+    color: rgb(18, 18, 18);
 }
 
 h2 {
-    padding: 15px;
-    color: rgb(227,183,30);
+    padding: 10px;
+    color: rgb(151, 151, 151);
 }
 
-h3{
-    color:rgb(60, 60, 60);
-    margin: 10%;
+h3 {
+    color: rgb(60, 60, 60);
+    margin: 1%;
 }
 
 a {
@@ -32,23 +36,37 @@ p {
     text-align: center;
 }
 
+video {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width: 48px;
+    height: 48px;
+    fill: rgb(251, 255, 0);
+}
+
 .bold {
     font-weight: bolder;
 }
 
 .borderRecommend {
-    border: 5px dashed rgb(227,183,30);
+    border: 5px dashed rgb(227, 183, 30);
 }
 
 .border {
-    border: 1px solid rgb(227,183,30);
+    border: 1px solid rgb(227, 183, 30);
 }
 
 .recommend {
     text-shadow: 0px 5px 10px rgb(155, 155, 155);
 }
 
-* { 
+* {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
@@ -65,15 +83,15 @@ header {
     align-items: center;
     font-size: 20px;
     text-align: center;
-    border-bottom: 4px solid rgb(227,183,30);
-    border-top: 4px solid rgb(227,183,30);
+    border-bottom: 4px solid rgb(227, 183, 30);
+    border-top: 4px solid rgb(227, 183, 30);
     position: sticky;
     top: 0;
 }
 
 .headerTitle {
     font-size: 25px;
-    color: rgb(227,183,30);
+    color: rgb(227, 183, 30);
 }
 
 .headerLinks {
@@ -86,14 +104,18 @@ header {
 .headerLink {
     padding: 5px;
     background-color: rgb(60, 60, 60);
-    border: 1px solid rgb(227,183,30);
-    color: rgb(227,183,30);
+    border: 1px solid rgb(227, 183, 30);
+    color: rgb(227, 183, 30);
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 2px;
+}
+
+.gizleGoster {
+    display: none;
 }
 
 main {
@@ -117,8 +139,8 @@ main {
 .mainPhoto {
     width: 100%;
     height: 350px;
-    border-bottom: 4px solid rgb(227,183,30);
-    border-top: 4px solid rgb(227,183,30);
+    border-bottom: 4px solid rgb(227, 183, 30);
+    border-top: 4px solid rgb(227, 183, 30);
     object-fit: cover;
 }
 
@@ -128,6 +150,13 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 1000px;
+    width: 100%;
+}
+
+@media screen and (max-width:990px) {
+    .main1 {
+        overflow-x: auto;
+    }
 }
 
 .main1Box {
@@ -145,7 +174,7 @@ main {
     font-size: 50px;
     padding-right: 2px;
     box-sizing: border-box;
-    color: rgb(227,183,30);
+    color: rgb(227, 183, 30);
 }
 
 .main2 {
@@ -157,14 +186,28 @@ main {
     height: 350px;
 }
 
+@media screen and (max-width:1452px) {
+    .main2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+
+    .main2Photo {
+        max-width: 95%;
+    }
+}
 
 .main2Photo {
     width: 100%;
-    max-width: 1050px;
     height: 100%;
     object-fit: cover;
     object-position: 25% 75%;
     border-radius: 60px;
+    margin: 1%;
+    padding: 1%;
 }
 
 .inline {
@@ -176,14 +219,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:15px;
+    margin: 15px;
 }
 
 .main2A {
     margin-top: 10px;
     padding: 8px;
     background-color: rgb(60, 60, 60);
-    border: 1px solid rgb(227,183,30);
+    border: 1px solid rgb(227, 183, 30);
     color: rgb(155, 155, 155);
     border-radius: 10px;
 }
@@ -213,41 +256,126 @@ main {
     box-shadow: 0px 20px 5px rgb(155, 155, 155);
 }
 
-.main4{
+@media screen and (max-width:991px) {
+    .main3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .main3Box {
+        margin: 5%;
+    }
+}
+
+.main4 {
     margin-bottom: 50px;
     width: 100%;
     height: 100px;
-    background-color: rgb(227,183,30);
+    background-color: rgb(227, 183, 30);
     border-top: 14px solid rgb(60, 60, 60);
     border-bottom: 14px solid rgb(60, 60, 60);
 }
 
 .main4Box,
-.main4{
+.main4 {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-}
-.main5BoxImg{
-    width: 40%;
-}
-.main5,
-.main5Box{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.main5Box{
+.main5,
+.main6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+}
+
+.main5BoxImg,
+.main6BoxImg{
+    width: 75%;
+    object-fit: contain;
+}
+
+.main5Box,
+.main6Box{
     display: flex;
     flex-direction: column;
-    max-width: 20%;
+    margin: 3%;
 }
 
+.filmDiziTitle {
+    font-size: 150%;
+}
 
+.filmDiziComment {
+    font-size: 75%;
+}
 
+@media screen and (max-width:1011px) {
+    .filmDiziTitle {
+        font-size: 100%;
+    }
+
+    .filmDiziComment {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:724px) {
+    .filmDiziTitle {
+        font-size: 75%;
+    }
+
+    .filmDiziComment {
+        font-size: 25%;
+    }
+}
+
+@media screen and (max-width:581px) {
+    .filmDiziTitle {
+        font-size: 50%;
+    }
+
+    .filmDiziComment {
+        display: none;
+    }
+}
+
+.star {
+    height: 20px;
+    width: 20px;
+}
+
+.starScore {
+    margin: 5px;
+}
+
+.divStar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.fragmanDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.fragmanButton {
+    margin: 15px;
+}
 footer {
     width: 100%;
     height: 100%;
@@ -267,27 +395,6 @@ footer {
     margin: 0 6%;
 }
 
-.footerDiv{
-    color: rgb(227,183,30);
+.footerDiv {
+    color: rgb(227, 183, 30);
 }
-
-svg{
-    width: 48px;
-    height: 48px;
-    fill: rgb(227,183,30);
-}
-
-@media screen and (max-width:991px) {
-    .main2, 
-    .main3{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 20%;
-    }   
-    
-    .main3Box{
-        margin:5% ;
-    }
-} 

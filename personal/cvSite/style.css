@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+
+.totalDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftBar {
+    height: 100%;
+    width: 15%;
+    background-color: blanchedalmond;
+}
+
+.main {
+    height: 100%;
+    width: 85%;
+    background-color: teal;
+} 
+
+.leftBar,
+.main,
+.cvPhoto{
+    margin: 1%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cvPhoto{
+    max-width: 95%;
+}
+
+.titleLkd{
+    font-size: 16px;
+} 
+
+
+/* bootstrap change */
+
+.text-dark{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+

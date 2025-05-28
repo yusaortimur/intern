@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <meta charset="utf-8">
     <title>document</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -13,10 +14,9 @@
     <header>
         <p class="headerTitle bold">AV</p>
         <div class="headerLinks">
-            <a class="headerLink" href=""><span id="icon" class="material-symbols-outlined">
-                    fiber_manual_record
+            <a class="headerLink" href="#filmPage"><span id="icon" class="material-symbols-outlined">
                 </span>Filmler</a>
-            <a class="headerLink" href=""><span id="icon" class="material-symbols-outlined">
+            <a class="headerLink" href="#diziPage"><span id="icon" class="material-symbols-outlined">
                     fiber_manual_record
                 </span>Diziler</a>
             <a class="headerLink" href=""><span id="icon" class="material-symbols-outlined">
@@ -26,7 +26,9 @@
     </header>
     <main>
         <h2>MovieApp'e Hoşgeldiniz</h2>
-        <img class="mainPhoto" src="https://hips.hearstapps.com/hmg-prod/images/best-4th-of-july-movies-to-stream-1654278088.jpg?crop=0.8297972654408298xw:1xh;center,top" alt="">
+        <img class="mainPhoto"
+            src="https://hips.hearstapps.com/hmg-prod/images/best-4th-of-july-movies-to-stream-1654278088.jpg?crop=0.8297972654408298xw:1xh;center,top"
+            alt="">
         <h2>Nasıl çalışır?</h2>
         <p>En sevdiğiniz filmleri ve dizileri hemen izlemeye nasıl başlayacağınızı adım adım göstereceğiz!</p>
         <div class="main1">
@@ -58,7 +60,7 @@
         </div>
 
         <div class="main2">
-            <img class="main2Photo "
+            <img class="main2Photo"
                 src="https://sprcdn-assets.sprinklr.com/674/8b955864-7307-4d41-8ded-c194170f5305-2729152590.jpg" alt="">
             <div class="main2Text">
                 <h2 class="mainH2 bold inline">Tüm filmleri ve TV şovlarını yayınlanır yayınlanmaz izle!!</h2>
@@ -113,60 +115,210 @@
             </div>
         </div>
         <div class="main4">
-            <div class="main4Box">
-                <h1>934</h1>
-                <h3>Film</h3>
+            <h3>Toplam</h3>
+            <h1>934</h1>
+            <h3>Film</h3>
+        </div>
+        <div class="main5" id="filmPage">
+            <div class="main5Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt0111161/?ref_=mv_close">
+                    <img class="main5BoxImg"
+                    src="https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg" alt="shawshank">
+                </a>
+                <a target="_blank" href="https://www.imdb.com/title/tt0111161/?ref_=mv_close">
+                    <p class="filmDiziTitle">The Shawshank Redemption</p>
+                </a>
+                <div class="divStar">
+                    <svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore">9.3 (3M)</p>
+                </div>
+                <a class="fragmanButton" href="#shawshank"><button
+                        onclick="fragmanlar('shawshank')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">A banker convicted of uxoricide forms a friendship over a quarter century
+                    with a
+                    hardened convict,
+                    while maintaining his innocence and trying to remain hopeful through simple compassion.</p>
             </div>
-            <div class="main4Box">
-                <h1>478</h1>
-                <h3>Dizi</h3>
+            <div class="main5Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt0068646/?ref_=mv_close">
+                        <img class="main5BoxImg"
+                        src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UY1982_.jpg" alt="godfather">
+                </a>
+                <a target="_blank" href="https://www.imdb.com/title/tt0068646/?ref_=mv_close">
+                    <p class="filmDiziTitle">The Godfather</p>
+                </a>
+                <div class="divStar">
+                    <svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore">9.2 (2.1M)</p>
+                </div>
+                <a class="fragmanButton" href="#godfather"><button
+                        onclick="fragmanlar('godfather')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">The aging patriarch of an organized crime dynasty transfers control of his
+                    clandestine empire to his
+                    reluctant son.</p>
             </div>
-            <div class="main4Box">
-                <h1>2.542</h1>
-                <h3>Kullanıcı</h3>
+            <div class="main5Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt0468569/?ref_=mv_close">
+                        <img class="main5BoxImg"
+                        src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="darkknight">
+                </a>
+                <a target="_blank" href="https://www.imdb.com/title/tt0468569/?ref_=mv_close">
+                    <p class="filmDiziTitle">The Dark Knight</p>
+                </a>
+                <div class="divStar"><svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore">9.0 (3M)</p>
+
+                </div>
+                <a class="fragmanButton" href="#darkknight"><button
+                        onclick="fragmanlar('darkknight')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">When a menace known as the Joker wreaks havoc and chaos on the people of
+                    Gotham,
+                    Batman, James Gordon
+                    and Harvey Dent must work together to put an end to the madness.</p>
             </div>
         </div>
-        <div class="main5">
-            <div class="main5Box">
-                <img class="main5BoxImg" src="https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg" alt="">
-                <a target="_blank" href="https://www.imdb.com/title/tt0111161/?ref_=mv_close"><h2>The Shawshank Redemption</h2></a>
-                <p>A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.</p>
+        <div class="fragmanDiv">
+            <div class="fragman gizleGoster" id=shawshank>
+                <button class="fragmanClose" style="background-color: transparent; border-color: transparent;"
+                    onclick="videoGizle()">X</button>
+                <video controls>
+                    <source
+                        src="https://imdb-video.media-imdb.com/vi3877612057/1434659607842-pgv4ql-1616202333253.mp4?Expires=1742460965&Signature=uokS2VnW4Hip3W0jOnPA1c6HiuTwwYmSuG-AAq9Ndr7rPY~hB8rb3MI2Y61BbRjjlCpdKV8xSdGNjXB7qlJmW-z6hDpUw65jMJbd1Otl45HzIQT4cBRLRPYy32hVea6RXXoSqq63OkBcGbLwmlqs6WFVOR-4S3PE8gpYCNmWqOu8J9Y0moqQ0bpjMD44W4lw6ZB0v3OyRDbxWxj0EyUFw-Ke7FgC80tCbLgNDmMVvuljYYEA0o-YmN3J2h740VnjtlUkn6BLA-aYnxH-L1xfdP7ZM0zHnCbqyMm-qiXYZ045kmi1eYlqtCJvt94kyOHccJO-l8~e66BxSlwI9mI1DA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA">
+                </video>
             </div>
-            <div class="main5Box">
-                <img class="main5BoxImg" src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UY1982_.jpg" alt="">
-                <a target="_blank" href="https://www.imdb.com/title/tt0068646/?ref_=mv_close"><h2>The Godfather</h2></a>
-                <p>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p>
+            <div class="fragman gizleGoster" id="godfather">
+                <button class="fragmanClose" style="background-color: transparent; border-color: transparent;"
+                    onclick="videoGizle()">X</button>
+                <video controls>
+                    <source
+                        src="https://imdb-video.media-imdb.com/vi1348706585/1434659607842-pgv4ql-1616202346191.mp4?Expires=1742462265&Signature=WgJkLKPYeHQE1aFWVOj0zv2I1gCpcxhxOj6jxCUaq6X9BL-dcs5JCtNNJ2TXZxim0X~PmCeonfBi6uAqlywwLusPAecxlHeCstNU0AJZyQJTvfegulHcFRd1vZPWI7JJo37ws8P1QjKi7cNeMh~XoMOfNJqm5Vd1Tt0SeDzJ5-DBklaAUEGuI2nFtuotim24-4uATPAr9ZK8JRXnkO3WYHdHgnfrJmAtJ7D~uDxPZ74cJHATNpuZTIJi6Jn0Wpd8SC59v-yQhVZY9ECGH81O9NJ-EhzozvrQRJkFaZ7j0DlAXG0Y1MIbofhnjAQyaYS88kFvViei8CUNaADyScpAxg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA">
+                </video>
             </div>
-            <div class="main5Box">
-                <img class="main5BoxImg" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UY2048_.jpg" alt="">
-                <a target="_blank" href="https://www.imdb.com/title/tt0468569/?ref_=mv_close"></a><h2>The Dark Knight</h2>
-                <p>When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.</p>
+            <div class="fragman gizleGoster" id="darkknight">
+                <button class="fragmanClose" style="background-color: transparent; border-color: transparent;"
+                    onclick="videoGizle()">X</button>
+                <video controls>
+                    <source
+                        src="https://imdb-video.media-imdb.com/vi324468761/1434659607842-pgv4ql-1563712918369.mp4?Expires=1742462757&Signature=stvecuunu-9lFzI4WHqoTNK~--zYQ1JYoSEgO8z8gyDlm9McVFOhW7Pdn~nhOCprcxRJGEWv0O~3ld2icY6dhnEoVnQVpt8fAY0rWy7aey477-DdIR0TUdLvFjvUEGwZEBKEutWeI6eNdfAfZAsxF6JUVdnHPqdHRIoSthTKQ0gPETxmSdVA9GwkpI9YKUdljDZDil58u55lgXVksDa1ob4ifMbcDqzkNq9~9Yp1U5GB3~8LIGNUHE6q6XcLM-3dSKLLvSoK2NThyt1la6XyJ~Hp7QuJLTYhwqNBoByq~c4WcaCCfOHmBsySfOoTYvDTRK4mWnEdEc3JnBVVGJnY~Q__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA">
+                </video>
             </div>
+        </div>
+        <div class="main4">
+            <h3>Toplam</h3>
+            <h1>478</h1>
+            <h3>Dizi</h3>
+        </div>
+        <div class="main6" id="diziPage">
+            <div class="main6Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_breaki">
+                    <img class="main6BoxImg" src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg" alt="breakingbad">
+                    <p class="filmDiziTitle">Breaking Bad</p>
+                </a>
+                <div class="divStar">
+                    <svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore">9.3 (2.3M)</p>
+                </div>
+                <a class="fragmanButton" href="#breakingbad"><button
+                        onclick="fragmanlar('breakingbad')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">A banker convicted of uxoricide forms a friendship over a quarter century
+                    with a hardened convict,
+                    while maintaining his innocence and trying to remain hopeful through simple compassion.</p>
+            </div>
+            <div class="main6Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt5491994/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_planet%2520ear">
+                    <img class="main6BoxImg" src="https://m.media-amazon.com/images/M/MV5BMGYwNjFkNzgtNWYwOC00MTkzLWE0ZmEtNjUwNGMxZTRjYTdmXkEyXkFqcGc@._V1_.jpg" alt="planetearth2">
+                    <p class="filmDiziTitle">Planet Earth II</p>
+                </a>
+                <div class="divStar">
+                    <svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore">9.4 (166K)</p>
+                </div>
+                <a class="fragmanButton" href="#planetearth2"><button
+                        onclick="fragmanlar('godfather')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">The aging patriarch of an organized crime dynasty transfers control of his
+                    clandestine empire to his
+                    reluctant son.</p>
+            </div>
+            <div class="main6Box">
+                <a target="_blank" href="https://www.imdb.com/title/tt0468569/?ref_=mv_close">
+                    <img class="main6BoxImg" src="https://m.media-amazon.com/images/M/MV5BY2NjNDUzOTgtMDFmNC00ZGQ4LWE5MDctMzczNGVlOGU1N2MyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="planetearth">
+                    <p class="filmDiziTitle">Planet Earth</p>
+                </a>
+                <div class="divStar"><svg class="star" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        class="ipc-icon ipc-icon--star-inline" viewBox="0 0 24 24" fill="currentColor"
+                        role="presentation">
+                        <path
+                            d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z">
+                        </path>
+                    </svg>
+                    <p class="starScore ">9.4 (227K)</p>
+                </div>
+                <a class="fragmanButton" href="#planetearth"><button
+                        onclick="fragmanlar('godfather')"><span>Fragman</span></button></a>
+                <p class="filmDiziComment">When a menace known as the Joker wreaks havoc and chaos on the people of
+                    Gotham, Batman, James Gordon
+                    and Harvey Dent must work together to put an end to the madness.</p>
+            </div>
+        </div>
+        <div class="main4">
+            <h3>Toplam</h3>
+            <h1>2.542</h1>
+            <h3>Kullanıcı</h3>
         </div>
     </main>
 
     <footer>
         <div class="footerMainDiv footerDivsDisplay">
             <div class="footerDiv">
-                <span>@Copyright © 2024 Rpm Digital</span>
+                <span>Copyright © 2024 Rpm Digital</span>
             </div>
             <div class="footerDiv footerDivsDisplay">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                    <path
-                        d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 32.380773 34.967178 39.306373 27 40.720703 L 27 29 L 30.625 29 C 31.129 29 31.555188 28.623047 31.617188 28.123047 L 31.992188 25.123047 C 32.028188 24.839047 31.938047 24.553891 31.748047 24.337891 C 31.559047 24.122891 31.287 24 31 24 L 27 24 L 27 20.5 C 27 19.397 27.897 18.5 29 18.5 L 31 18.5 C 31.552 18.5 32 18.053 32 17.5 L 32 14.125 C 32 13.607 31.604844 13.174906 31.089844 13.128906 C 31.030844 13.123906 29.619984 13 27.833984 13 C 23.426984 13 21 15.616187 21 20.367188 L 21 24 L 17 24 C 16.448 24 16 24.447 16 25 L 16 28 C 16 28.553 16.448 29 17 29 L 21 29 L 21 40.720703 C 13.032822 39.306373 7 32.380773 7 24 C 7 14.593391 14.593385 7 24 7 z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/20 00/svg" viewBox="0 0 48 48">
-                    <path
-                        d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                    <path
-                        d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 z M 15.5 13 A 2.5 2.5 0 0 0 15.5 18 A 2.5 2.5 0 0 0 15.5 13 z M 14 20 C 13.447 20 13 20.447 13 21 L 13 34 C 13 34.553 13.447 35 14 35 L 17 35 C 17.553 35 18 34.553 18 34 L 18 21 C 18 20.447 17.553 20 17 20 L 14 20 z M 21 20 C 20.447 20 20 20.447 20 21 L 20 34 C 20 34.553 20.447 35 21 35 L 24 35 C 24.553 35 25 34.553 25 34 L 25 26.5 C 25 25.121 26.121 24 27.5 24 C 28.879 24 30 25.121 30 26.5 L 30 34 C 30 34.553 30.447 35 31 35 L 34 35 C 34.553 35 35 34.553 35 34 L 35 26 C 35 22.691 32.309 20 29 20 C 27.462 20 26.063 20.586016 25 21.541016 L 25 21 C 25 20.447 24.553 20 24 20 L 21 20 z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                    <path
-                        d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 31.66536 35.956939 38.122519 29 40.251953 L 29 35.136719 C 29 33.226635 27.899316 31.588619 26.308594 30.773438 A 10 8 0 0 0 32.4375 18.720703 C 32.881044 17.355414 33.376523 14.960672 32.199219 13.076172 C 29.929345 13.076172 28.464667 14.632086 27.765625 15.599609 A 10 8 0 0 0 24 15 A 10 8 0 0 0 20.230469 15.59375 C 19.529731 14.625773 18.066226 13.076172 15.800781 13.076172 C 14.449711 15.238817 15.28492 17.564557 15.732422 18.513672 A 10 8 0 0 0 21.681641 30.779297 C 20.3755 31.452483 19.397283 32.674042 19.097656 34.15625 L 17.783203 34.15625 C 16.486203 34.15625 15.98225 33.629234 15.28125 32.740234 C 14.58925 31.851234 13.845172 31.253859 12.951172 31.005859 C 12.469172 30.954859 12.144453 31.321484 12.564453 31.646484 C 13.983453 32.612484 14.081391 34.193516 14.650391 35.228516 C 15.168391 36.160516 16.229687 37 17.429688 37 L 19 37 L 19 40.251953 C 12.043061 38.122519 7 31.66536 7 24 C 7 14.593391 14.593385 7 24 7 z" />
-                </svg>
+                <a href="https://tr-tr.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path
+                            d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 32.380773 34.967178 39.306373 27 40.720703 L 27 29 L 30.625 29 C 31.129 29 31.555188 28.623047 31.617188 28.123047 L 31.992188 25.123047 C 32.028188 24.839047 31.938047 24.553891 31.748047 24.337891 C 31.559047 24.122891 31.287 24 31 24 L 27 24 L 27 20.5 C 27 19.397 27.897 18.5 29 18.5 L 31 18.5 C 31.552 18.5 32 18.053 32 17.5 L 32 14.125 C 32 13.607 31.604844 13.174906 31.089844 13.128906 C 31.030844 13.123906 29.619984 13 27.833984 13 C 23.426984 13 21 15.616187 21 20.367188 L 21 24 L 17 24 C 16.448 24 16 24.447 16 25 L 16 28 C 16 28.553 16.448 29 17 29 L 21 29 L 21 40.720703 C 13.032822 39.306373 7 32.380773 7 24 C 7 14.593391 14.593385 7 24 7 z" />
+                    </svg></a>
+                <a href="https://instagram.com"><svg xmlns="http://www.w3.org/20 00/svg" viewBox="0 0 48 48">
+                        <path
+                            d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z" />
+                    </svg></a>
+                <a href="https://linkedin.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path
+                            d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 11.5 C 9 10.101774 10.101774 9 11.5 9 z M 15.5 13 A 2.5 2.5 0 0 0 15.5 18 A 2.5 2.5 0 0 0 15.5 13 z M 14 20 C 13.447 20 13 20.447 13 21 L 13 34 C 13 34.553 13.447 35 14 35 L 17 35 C 17.553 35 18 34.553 18 34 L 18 21 C 18 20.447 17.553 20 17 20 L 14 20 z M 21 20 C 20.447 20 20 20.447 20 21 L 20 34 C 20 34.553 20.447 35 21 35 L 24 35 C 24.553 35 25 34.553 25 34 L 25 26.5 C 25 25.121 26.121 24 27.5 24 C 28.879 24 30 25.121 30 26.5 L 30 34 C 30 34.553 30.447 35 31 35 L 34 35 C 34.553 35 35 34.553 35 34 L 35 26 C 35 22.691 32.309 20 29 20 C 27.462 20 26.063 20.586016 25 21.541016 L 25 21 C 25 20.447 24.553 20 24 20 L 21 20 z" />
+                    </svg></a>
+                <a href="https://github.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path
+                            d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 31.66536 35.956939 38.122519 29 40.251953 L 29 35.136719 C 29 33.226635 27.899316 31.588619 26.308594 30.773438 A 10 8 0 0 0 32.4375 18.720703 C 32.881044 17.355414 33.376523 14.960672 32.199219 13.076172 C 29.929345 13.076172 28.464667 14.632086 27.765625 15.599609 A 10 8 0 0 0 24 15 A 10 8 0 0 0 20.230469 15.59375 C 19.529731 14.625773 18.066226 13.076172 15.800781 13.076172 C 14.449711 15.238817 15.28492 17.564557 15.732422 18.513672 A 10 8 0 0 0 21.681641 30.779297 C 20.3755 31.452483 19.397283 32.674042 19.097656 34.15625 L 17.783203 34.15625 C 16.486203 34.15625 15.98225 33.629234 15.28125 32.740234 C 14.58925 31.851234 13.845172 31.253859 12.951172 31.005859 C 12.469172 30.954859 12.144453 31.321484 12.564453 31.646484 C 13.983453 32.612484 14.081391 34.193516 14.650391 35.228516 C 15.168391 36.160516 16.229687 37 17.429688 37 L 19 37 L 19 40.251953 C 12.043061 38.122519 7 31.66536 7 24 C 7 14.593391 14.593385 7 24 7 z" />
+                    </svg></a>
             </div>
         </div>
     </footer>
