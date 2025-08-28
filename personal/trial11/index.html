@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clarence Taylor - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .dark-mode .main {
+      background-color: #1e1e1e;
+    }
+    .dark-mode .sidebar {
+      background-color: #333;
+    }
+    .sidebar {
+      background-color: #c75c2e;
+      color: white;
+      width: 260px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      height: 100vh;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+    .sidebar nav {
+      margin-top: 30px;
+    }
+    .sidebar nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      font-weight: bold;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      opacity: 1;
+    }
+    .main {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 50px;
+      margin-left: 260px;
+    }
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h1 span {
+      color: #c75c2e;
+    }
+    .info {
+      margin-top: 10px;
+      color: #555;
+    }
+    .dark-mode .info {
+      color: #ccc;
+    }
+    .description {
+      margin: 30px 0;
+      color: #666;
+      line-height: 1.6;
+    }
+    .dark-mode .description {
+      color: #aaa;
+    }
+    .social-icons {
+      display: flex;
+      gap: 20px;
+    }
+    .social-icons a {
+      color: #333;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    .dark-mode .social-icons a {
+      color: #ccc;
+    }
+
+    .toggle-container {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 40px;
+      background: #ddd;
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px;
+      z-index: 10;
+    }
+    .toggle-icon {
+      width: 16px;
+      height: 16px;
+    }
+    .toggle-indicator {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+      background-color: #3f51b5;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      z-index: 0;
+    }
+    .dark-mode .toggle-indicator {
+      transform: translateX(40px);
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="toggle-container" onclick="toggleDarkMode()">
+      <div class="toggle-indicator"></div>
+      <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v1m0 16v1m8.66-13.66l-.707.707M4.05 19.95l-.707.707M21 12h1M2 12H1m16.95 4.95l.707.707M4.05 4.05l.707.707M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10z"/></svg>
+      <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 0 1 12.21 3a7 7 0 0 0 0 14A9 9 0 0 1 21 12.79z"/></svg>
+    </div>
+    <img src="https://via.placeholder.com/120" alt="Clarence Taylor">
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#interests">INTERESTS</a>
+      <a href="#awards">AWARDS</a>
+    </nav>
+  </div>
+  <div class="main">
+    <section id="about">
+      <h1>CLARENCE <span>TAYLOR</span></h1>
+      <div class="info">
+        3542 Berry Street • Cheyenne Wells, CO 80810 • (317) 585-8468 • <span style="color: #c75c2e;">name@email.com</span>
+      </div>
+      <div class="description">
+        I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>Details about work experience go here...</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p>Details about education go here...</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Details about skills go here...</p>
+    </section>
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>Details about interests go here...</p>
+    </section>
+    <section id="awards">
+      <h2>Awards</h2>
+      <p>Details about awards go here...</p>
+    </section>
+  </div>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
